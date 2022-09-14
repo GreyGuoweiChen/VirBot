@@ -36,14 +36,10 @@ chmod -R 777 ref
 5. (Optional) If you want to use VirBot as an executable file, please add VirBot to your environment variables path.
 For examples (if your .bashrc file is under the user directory):
     
-    For macOS:
+    For macOS and Linux:
     ```
+    chmod +x VirBot.py
     echo 'PATH=$PATH:YOUR_DIC/RNA_virus_detector' >> ~/.bashrc
-    ```
-    
-    For Linux:
-    ```
-    echo 'PATH="$PATH:YOUR_DIC/RNA_virus_detector"' >> ~/.bashrc
     ```
     Please replace YOUR_DIC by the path of RNA_virus_detector.
     
@@ -59,11 +55,11 @@ For examples (if your .bashrc file is under the user directory):
 ## Usage:
 
 ```
-# If the environment variables path is correctly set and you run VirBot.py as an executable file.
-VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
-
 # If you run VirBot.py as python script.
 python VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
+
+# If the environment variables path is correctly set and you run VirBot.py as an executable file.
+VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
 ```
 
 ### Options 
@@ -79,5 +75,5 @@ python VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
 ```
 VirBot.py --input test/test_input.fa
 
-VirBot.py --input test/test_input.fa --output VB_result --sen
+python3 VirBot.py --input test/test_input.fa --output VB_result --sen
 ```
