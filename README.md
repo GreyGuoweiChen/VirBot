@@ -20,33 +20,42 @@ conda activate virbot
 2. Please download VirBot by "git clone"
 ```
 git clone https://github.com/GreyGuoweiChen/RNA_virus_detector
+cd RNA_virus_detector
 ```
 
 3. Please download the database file from [OneDrive](https://portland-my.sharepoint.com/:f:/g/personal/gwchen3-c_my_cityu_edu_hk/EufG0D1CYLREg_7K1UgMvpwBg6bbBIJSM0vdV5udvw1k_w?e=nOJo3G) and uncompress them in the same directory with VirBot.py .
+```
+unzip ref.zip
+```
 
 4. You may want to add permissions to all database file.
 ```
-chmod -R 777 RNA_virus_detector/ref
+chmod -R 777 ref
 ```
 
 5. (Optional) If you want to use VirBot as an executable file, please add VirBot to your environment variables path.
-For examples (if your .bashrc file and RNA_virus_detector are under the user directory):
+For examples (if your .bashrc file is under the user directory):
     
     For macOS:
     ```
-    vi ~/.bashrc
-    export PATH=$PATH:~/RNA_virus_detector
-    source ~/.bashrc
+    echo 'PATH=$PATH:YOUR_DIC/RNA_virus_detector' >> ~/.bashrc
     ```
     
     For Linux:
     ```
-    vi ~/.bashrc
-    export PATH="$PATH:~/RNA_virus_detector"
+    echo 'PATH="$PATH:YOUR_DIC/RNA_virus_detector"' >> ~/.bashrc
+    ```
+    Please replace YOUR_DIC by the path of RNA_virus_detector.
+    
+    Please remember to activate the path by:
+    ```
     source ~/.bashrc
     ```
-
-
+    and check its avaiability by:
+    ```
+    echo $PATH
+    ```
+    
 ## Usage:
 
 ```
