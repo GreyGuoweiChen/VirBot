@@ -17,14 +17,19 @@ conda create -n virbot -c bioconda prodigal hmmer diamond python=3
 conda activate virbot
 ```
 
-2. Please download the database file from [OneDrive](https://portland-my.sharepoint.com/:f:/g/personal/gwchen3-c_my_cityu_edu_hk/EufG0D1CYLREg_7K1UgMvpwBg6bbBIJSM0vdV5udvw1k_w?e=nOJo3G) and uncompress them in the same directory with VirBot.py .
+2. Please download VirBot by "git clone"
+```
+git clone https://github.com/GreyGuoweiChen/RNA_virus_detector
+```
 
-3. You may want to add permissions to all database file.
+3. Please download the database file from [OneDrive](https://portland-my.sharepoint.com/:f:/g/personal/gwchen3-c_my_cityu_edu_hk/EufG0D1CYLREg_7K1UgMvpwBg6bbBIJSM0vdV5udvw1k_w?e=nOJo3G) and uncompress them in the same directory with VirBot.py .
+
+4. You may want to add permissions to all database file.
 ```
 chmod -R 777 RNA_virus_detector/ref
 ```
 
-4. You may want to add VirBot to your environment variables path.
+5. (Optional) If you want to use VirBot as an executable file, please add VirBot to your environment variables path.
 For examples (if your .bashrc file and RNA_virus_detector are under the user directory):
     
     For macOS:
