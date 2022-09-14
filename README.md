@@ -73,7 +73,7 @@ VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
 ### Example:
   
 ```
-VirBot.py --input test/test_input.fa
+python3 VirBot.py --input test/test_input.fa
 
-python3 VirBot.py --input test/test_input.fa --output VB_result --sen
+VirBot.py --input test/test_input.fa --output VB_result --sen
 ```
