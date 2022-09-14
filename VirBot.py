@@ -13,8 +13,7 @@ positive_cluster = []
 def virbot_cmd():
     parser = argparse.ArgumentParser(description="ARGUMENTS")
     parser.add_argument('--input', type=str, help="The input contig file.")
-    parser.add_argument('--output', default="output.VB.fa", type=str, help="The output file contains all the predicted RNA virus contigs.")
-    parser.add_argument('--temp_dir', default="VB_result", type=str, help="(Optional) The working directory stores all the temporary and result files.") #"The temporary directory used to hold temporary files"
+    parser.add_argument('--output', default="VB_result", type=str, help="The output directory.")
     parser.add_argument('--sen', action='store_true', help="Run the sensitive mode of VirBot.")
     args = parser.parse_args()
     return args
@@ -101,7 +100,7 @@ class protein:
             self.rnavaralness = 1
             positive_cluster.append(self.best_hit)
             print(self.fullname.split('#')[0][1:-1], '\t', self.best_hit, '\t', self.score, '>',
-                  protein.db_threshold[self.best_hit], '\te_value:', self.e_value)
+                  protein.db_threshold[self.best_hit], '\t', self.e_value)
 
     def parse_match_diamond_blastx(self, result):
         t = result.split()
@@ -110,10 +109,10 @@ class protein:
             self.rnavaralness, self.diamond_acc = \
                 1, hit_acc
             print(self.fullname.split('#')[0][1:-1], '\t', hit_acc,
-                  '\te_value:',t[-2],'\tscore:',t[-1])
+                  '\tscore:', t[-1], '\te_value:', t[-2])
 
 #####################################################################################
-def predict(filepath,
+def predict(output_dir, temp_dir,
             file_input, file_output,
             sen=False):
     """
@@ -150,6 +149,7 @@ def predict(filepath,
                     if prot_name in proteins:
                         proteins[prot_name].parse_match_search(line)
 
+        print("Protein_name\tHit cluster\tBit score\tE-value")
         for prot_name, protein in proteins.items():
             protein.rnavaralness_for_search()
 
@@ -161,6 +161,7 @@ def predict(filepath,
         :param proteins: the tmp protein dict with prediction result
         :return: the tmp protein dict with sensitive prediction result
         '''
+        print("Protein_name\tHit RNA virus acc\tBit score\tE-value")
         with open(filename,'r') as f:
             for line in f:
                 if line.startswith('#'):
@@ -170,7 +171,6 @@ def predict(filepath,
                     prot_name = t[0]
                     if prot_name in proteins:
                         proteins[prot_name].parse_match_diamond_blastx(line)
-
         return proteins
 
     def parse_contig(filename,proteins):
@@ -256,41 +256,45 @@ def predict(filepath,
 
 #####################################################################################
     # store all the predicted proteins into a ditc {prot_name: proteins_information} without the seq.
-    proteins = parse_protein(filepath + "protein.faa")
-    print("num of proteins",proteins.__len__())
+    proteins = parse_protein(temp_dir + "protein.faa")
+    print("Num of proteins",proteins.__len__())
 
     # parse the hmmsearch result for the proteins, ditc {prot_name: proteins_information}.
-    proteins = parse_hmmsearch(filepath + "VB_hmmer.out", proteins)
-    print("parsing of protein HMM-match result finished")
+    proteins = parse_hmmsearch(temp_dir + "VB_hmmer.out", proteins)
+    print("Parsing of protein HMM-match result finished")
 
     # parse the diamond blasp result for the proteins, ditc {prot_name: proteins_information}.
     if sen:
-       proteins = parse_diamond_blastx(filepath + "VB_diamond.out", proteins)
-       print("parsing of protein DIAMOND-match result finished")
+       proteins = parse_diamond_blastx(temp_dir + "VB_diamond.out", proteins)
+       print("Parsing of protein DIAMOND-match result finished")
 
     # record all the contigs from input return, ditc {contig_name: contigs_information}.
     contigs = parse_contig(file_input, proteins)
 
     # summarize the protein result into contigs, and retrieve the identified sequences.
     # ditc {positive_contig_name: contigs_information}.
-    positive_contigs = output_rnaviralness(file_input,contigs)
+    positive_contigs = output_rnaviralness(file_input, contigs)
 
     # write the output file
-    write_positive_file(filepath + file_output, positive_contigs)
+    write_positive_file(output_dir + file_output, positive_contigs)
 
 #####################################################################################
 if __name__ == "__main__":
 
     args = virbot_cmd()
 
-    temp_dir = args.temp_dir
-    if not os.path.exists(temp_dir):
-        os.makedirs(temp_dir)
+    output_dir = args.output
+    if os.path.exists(output_dir):
+        raise Exception("The output directory already exists.")
+    else:
+        os.makedirs(output_dir)
+    temp_dir = f"{output_dir}/tmp"
+    os.makedirs(temp_dir)
 
     FNULL = open(os.devnull, 'w')
 
     print(f"Input contig: {args.input}")
-    print(f"Output directory: {temp_dir}")
+    print(f"Output directory: {output_dir}")
     if args.sen:
         print(f"Mode: sensitive mode")
     else:
@@ -315,8 +319,9 @@ if __name__ == "__main__":
         print("DIAMOND finshed.")
 
     # predict using VirBot
-    predict(filepath=f"{temp_dir}/",
+    predict(output_dir=f"{output_dir}/",
+            temp_dir=f"{temp_dir}/",
             file_input = args.input,
-            file_output = args.output,
+            file_output = "output.vb.fasta",
             sen=args.sen)
 

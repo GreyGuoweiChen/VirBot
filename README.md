@@ -71,7 +71,7 @@ python VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
 ```
 --input: The input contig file in fasta format.
 --output: The output directory (default: VB_result).
---sen: Use the sensitive mode for VirBot.
+--sen (Optional): Use the sensitive mode for VirBot.
 ```
 
 ### Example:
