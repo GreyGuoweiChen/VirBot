@@ -17,10 +17,7 @@ conda create -n virbot -c bioconda prodigal hmmer diamond python=3
 conda activate virbot
 ```
 
-2. We currently do not support download VirBot from conda. Please download VirBot by "git lfs clone" instread of "git clone".
-```
-git lfs clone https://github.com/GreyGuoweiChen/RNA_virus_detector
-```
+2. Please download the database file from OneDrive and uncompress them in the same directory with VirBot.py .
 
 3. You may want to add permissions to all database file.
 ```
