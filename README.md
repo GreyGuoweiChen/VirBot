@@ -47,7 +47,7 @@ For examples (if your .bashrc file is under the user directory):
     ```
     Please replace YOUR_DIC by the path of RNA_virus_detector.
     
-    Please remember to activate the path by:
+    Please remember to activate the PATH by:
     ```
     source ~/.bashrc
     ```
@@ -59,26 +59,25 @@ For examples (if your .bashrc file is under the user directory):
 ## Usage:
 
 ```
-# If the environment variables path is correctly set.
-VirBot.py [--input INPUT_CONTIG] [--output PREDICTION] [--temp_dir TEMPORAY FOLDER]
+# If the environment variables path is correctly set and you run VirBot.py as an executable file.
+VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
 
-# If you run VirBot.py in the software folder.
-python VirBot.py [--input INPUT_CONTIG] [--output PREDICTION] [--temp_dir TEMPORAY FOLDER]
+# If you run VirBot.py as python script.
+python VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
 ```
 
 ### Options 
 
 ```
 --input: The input contig file in fasta format.
---output: The output fasta file containing all the predicted RNA virus contigs.
---temp_dir (Optional): The temporary directory used to hold temporary files (default: VB_result).
+--output: The output directory (default: VB_result).
 --sen: Use the sensitive mode for VirBot.
 ```
 
 ### Example:
   
 ```
-VirBot.py --input test/test_input.fa --output test_output.fna
+VirBot.py --input test/test_input.fa
 
-VirBot.py --input test/test_input.fa --output test_output.fna --sen
+VirBot.py --input test/test_input.fa --output VB_result --sen
 ```
