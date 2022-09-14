@@ -17,7 +17,7 @@ conda create -n virbot -c bioconda prodigal hmmer diamond python=3
 conda activate virbot
 ```
 
-2. Please download the database file from OneDrive and uncompress them in the same directory with VirBot.py .
+2. Please download the database file from OneDrive(https://portland-my.sharepoint.com/:f:/g/personal/gwchen3-c_my_cityu_edu_hk/EufG0D1CYLREg_7K1UgMvpwBg6bbBIJSM0vdV5udvw1k_w?e=nOJo3G) and uncompress them in the same directory with VirBot.py .
 
 3. You may want to add permissions to all database file.
 ```
