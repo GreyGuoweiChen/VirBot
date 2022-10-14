@@ -1,7 +1,9 @@
 # VirBot: an RNA viral contig detector for metagenomic data
-    Without relying on cultivation, metagenomic sequencing greatly accelerated the novel RNA virus detection. However, it is not trivial to accurately identify RNA viral contigs from a mixture of species. The low content of RNA viruses in metagenomic data requires a highly specific detector, while new RNA viruses can exhibit high genetic diversity, posing a challenge for alignment-based tools.
-    Here, we develop VirBot, an easy-to-use yet effective RNA virus detection tool from metagenomic data. It takes assembled contigs as input and detect ones from RNA viruses. 
-    VirBot is deisgned based on a comprehensive RNA viral protein family database. Besides the hallmar gene in RNA virus, RdRps, we also leverage other essential proteins, including capsid proteins, envelop proteins, viral auxiliary protein, etc. Integrating the adaptative bit score cutoff, VirBot shows its higher specificity in metagenomic dataset and sensitivity in novel RNA virus dataset. VirBot supports identifying contigs as short as 500bp.
+Without relying on cultivation, metagenomic sequencing greatly accelerated the novel RNA virus detection. However, it is not trivial to accurately identify RNA viral contigs from a mixture of species. The low content of RNA viruses in metagenomic data requires a highly specific detector, while new RNA viruses can exhibit high genetic diversity, posing a challenge for alignment-based tools.
+    
+Here, we develop VirBot, an easy-to-use yet effective RNA virus detection tool from metagenomic data. It takes assembled contigs as input and detect ones from RNA viruses. 
+    
+VirBot is deisgned based on a comprehensive RNA viral protein family database. Besides the hallmar gene in RNA virus, RdRps, we also leverage other essential proteins, including capsid proteins, envelop proteins, viral auxiliary protein, etc. Integrating the adaptative bit score cutoff, VirBot shows its higher specificity in metagenomic dataset and sensitivity in novel RNA virus dataset. VirBot supports identifying contigs as short as 500bp.
 
 
 ## Dependency:
@@ -30,7 +32,8 @@ cd RNA_virus_detector
 ```
 unzip ref.zip
 ```
-    The ref folder should be place under RNA_virus_detector and contain 4 database files: VirBot.hmm, VirBot.dmnd, VirBot_hmm_threshold.txt, and VirBot_RNAvirus_acc.txt, representing the pHHMs database, DIAMOND database, adaptive threshold file, and all the collected RNA virus accession number.
+    
+The ref folder should be place under RNA_virus_detector and contain 4 database files: VirBot.hmm, VirBot.dmnd, VirBot_hmm_threshold.txt, and VirBot_RNAvirus_acc.txt, representing the pHHMs database, DIAMOND database, adaptive threshold file, and all the collected RNA virus accession number.
 
 4. You may want to add permissions to all database file.
 ```
