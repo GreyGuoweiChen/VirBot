@@ -7,7 +7,7 @@ VirBot is deisgned based on a comprehensive RNA viral protein family database. B
 
 We validated VirBot in various scenarios and benchmarked it with other RNA virus detection tools. VirBot achieves higher recall than other tools. And it also demonstrates high specificity in metagenomic data that only contains a small number of RNA viruses. Here, we briefly show the result of VirBot on metagenomics data (Fig (c)) and pure RNA virus dataset (Fig (d)).
 
-![image](images/github_3.png)
+![(a) Construction of the RNA viral pHMMs database. (b) Sketch of the key components of \tool. (c) Detection performance on simulated data: ERR1992810 (left) and ERR2185279 (right). (d) Recall on RNA viral datasets: RNA phages dataset (left) and marine water RNA virome dataset (right). ](images/github_3.png)
 * (a) Construction of the RNA viral pHMMs database. (b) Sketch of the key components of \tool. (c) Detection performance on simulated data: ERR1992810 (left) and ERR2185279 (right). (d) Recall on RNA viral datasets: RNA phages dataset (left) and marine water RNA virome dataset (right). *
 
 ## Dependency:
