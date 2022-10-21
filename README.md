@@ -70,6 +70,7 @@ For examples (if your .bashrc file is under the user directory):
     ```
     
 ## Usage:
+The VirBot is friendly to use. It requires input as fasta format and will return the fasta format output file with the identified RNA virus sequences. 
 
 ```
 # If the environment variables path is correctly set and you run VirBot.py as an executable file.
