@@ -2,6 +2,7 @@
 import argparse
 import subprocess
 from collections import Counter
+import pandas as pd
 import os
 
 VirBot_path = str(os.path.dirname(os.path.abspath(__file__)))
@@ -26,6 +27,15 @@ def read_thresholding():
             t = line.strip().split()
             threshold[int(t[0])] = float(t[1])
     return threshold
+    
+def read_hmmtaxa():
+    filename = VirBot_path + "/ref/VirBot_hmm_taxa.txt"
+    hmm_taxa = {}
+    with open(filename, 'r') as f:
+        for line in f:
+            t = line.strip().split()
+            hmm_taxa[int(t[0])] = t[1]
+    return hmm_taxa
 
 def read_rv_acc():
     filename = VirBot_path + "/ref/VirBot_RNAvirus_acc.txt"
@@ -47,23 +57,27 @@ class contig:
         self.proteins[prot_name] = prot
 
     def calculate_rnaviralness(self):
-        t = 0
+        t, tmp_top_score = 0, 0
         for key, value in  self.proteins.items():
             if value.rnavaralness:
                 t += 1
+                if value.potential_taxa and tmp_top_score < value.score:
+                    self.taxa = value.potential_taxa
+                    tmp_top_score = value.score
         if len(self.proteins):
             self.rnaviralness = t / len(self.proteins)
 
 #####################################################################################
 class protein:
     db_threshold = read_thresholding()
+    db_hmmtaxa = read_hmmtaxa()
     db_rv_acc = read_rv_acc()
 
     def __init__(self,fullname):
         self.fullname = fullname
         self.contig_name = self._set_contig_name(fullname)
         self.seq=''
-
+        self.potential_taxa = None
         self.best_hit = 0
         self.e_value = 1
         self.score = 0
@@ -99,8 +113,13 @@ class protein:
         if self.best_hit and self.score >= protein.db_threshold[self.best_hit] and self.e_value< 1e-3:
             self.rnavaralness = 1
             positive_cluster.append(self.best_hit)
-            print(self.fullname.split('#')[0][1:-1], '\t', self.best_hit, '\t', self.score, '>',
-                  protein.db_threshold[self.best_hit], '\t', self.e_value)
+            self.potential_taxa = protein.db_hmmtaxa[self.best_hit]
+#            print(self.fullname.split('#')[0][1:-1], '\tcluster_%d()'%(self.best_hit), '\t', self.score, '>',
+#                  protein.db_threshold[self.best_hit], '\t', self.e_value)
+            print(self.fullname.split('#')[0][1:-1],
+                  '\tcluster_%d_(%.1f)' % (self.best_hit, protein.db_threshold[self.best_hit]),
+                  '\t', self.score, '\t', self.e_value,
+                  '\t', self.potential_taxa)
 
     def parse_match_diamond_blastx(self, result):
         t = result.split()
@@ -108,8 +127,10 @@ class protein:
         if hit_acc in protein.db_rv_acc:
             self.rnavaralness, self.diamond_acc = \
                 1, hit_acc
+#            print(self.fullname.split('#')[0][1:-1], '\t', hit_acc,
+#                  '\tscore:', t[-1], '\te_value:', t[-2])
             print(self.fullname.split('#')[0][1:-1], '\t', hit_acc,
-                  '\tscore:', t[-1], '\te_value:', t[-2])
+                  '\t', t[-1], '\t', t[-2])
 
 #####################################################################################
 def predict(output_dir, temp_dir,
@@ -149,7 +170,7 @@ def predict(output_dir, temp_dir,
                     if prot_name in proteins:
                         proteins[prot_name].parse_match_search(line)
 
-        print("Protein_name\tHit cluster\tBit score\tE-value")
+        print("Protein_acc\tHMM_name_(corresponding_threshold)\tBit_score\tE-value\tTaxa")
         for prot_name, protein in proteins.items():
             protein.rnavaralness_for_search()
 
@@ -161,7 +182,7 @@ def predict(output_dir, temp_dir,
         :param proteins: the tmp protein dict with prediction result
         :return: the tmp protein dict with sensitive prediction result
         '''
-        print("Protein_name\tHit RNA virus acc\tBit score\tE-value")
+        print("Protein_acc\tReference_acc\tBit_score\tE-value")
         with open(filename,'r') as f:
             for line in f:
                 if line.startswith('#'):
@@ -202,13 +223,15 @@ def predict(output_dir, temp_dir,
         :return: the tmp contigs dict that containing the accession and protein prediction result
         """
         i = 0
-        print('Contig_name\tRNA-viral gene content\tEncoded proteins num')
+        print('Contig_acc\tRNA-viral_gene_content\tEncoded_proteins_num\tLikely_taxa')
         positive_contigs = {}
         # Sum the proteins into the contig, and recode the acc.
         for c_name,c in contigs.items():
             # viral gene content cutoff: 1/16
             if c.rnaviralness >= 0.0625:
-                print(c_name,'\t',c.rnaviralness,'\t',len(c.proteins))
+                if c.taxa == None:
+                    c.taxa = "Riboviria"
+                print(c_name,'\t',round(c.rnaviralness,2),'\t',len(c.proteins),'\t',c.taxa)
                 positive_contigs[c_name] = c
             if c.proteins.__len__()>0:
                 i+=1
@@ -243,16 +266,21 @@ def predict(output_dir, temp_dir,
                 positive_contigs[contig_name].seq = seq
         return positive_contigs
 
-    def write_positive_file(filename,positive_contigs):
+    def write_positive_file(output_dir, file_output, positive_contigs):
         """
         :param filename: the output filename
         :param positive_contigs: all the predicted positive contigs
         :return: None
         """
-        with open(filename,'w') as f:
+        positive_contig_output = []
+        with open(output_dir + file_output,'w') as f:
             for c_name,c in positive_contigs.items():
                 f.write(c.fullname)
                 f.write(c.seq)
+                positive_contig_output.append([c_name, round(c.rnaviralness,2), len(c.proteins), c.taxa])
+
+        df = pd.DataFrame(positive_contig_output, columns=['Contig_acc','RNA-viral_gene_content','Encoded_proteins_num','Likely_taxa'])
+        df.to_csv(output_dir + "pos_contig_score.csv",index=False)
 
 #####################################################################################
     # store all the predicted proteins into a ditc {prot_name: proteins_information} without the seq.
@@ -276,7 +304,7 @@ def predict(output_dir, temp_dir,
     positive_contigs = output_rnaviralness(file_input, contigs)
 
     # write the output file
-    write_positive_file(output_dir + file_output, positive_contigs)
+    write_positive_file(output_dir, file_output, positive_contigs)
 
 #####################################################################################
 if __name__ == "__main__":
