@@ -16,6 +16,7 @@ def virbot_cmd():
     parser.add_argument('--input', type=str, help="The input contig file.")
     parser.add_argument('--output', default="VB_result", type=str, help="The output directory.")
     parser.add_argument('--sen', action='store_true', help="Run the sensitive mode of VirBot.")
+    parser.add_argument('--taxa', default="TOP", help="The mode of VirBot's taxanomic module (TOP(default)/LCA)")
     args = parser.parse_args()
     return args
 
@@ -29,11 +30,11 @@ def read_thresholding():
     return threshold
     
 def read_hmmtaxa():
-    filename = VirBot_path + "/ref/VirBot_hmm_taxa.txt"
+    filename = VirBot_path + "/ref/VirBot_hmm_taxa_full.txt"
     hmm_taxa = {}
     with open(filename, 'r') as f:
         for line in f:
-            t = line.strip().split()
+            t = line.strip().split('\t')
             hmm_taxa[int(t[0])] = t[1]
     return hmm_taxa
 
@@ -44,6 +45,12 @@ def read_rv_acc():
         for line in f:
             db_rc_acc.add(line.strip())
     return db_rc_acc
+    
+def longest_substring(sa,sb):
+    for i in range(min(len(sa),len(sb))):
+        if sa[i]!=sb[i]:
+         return sa[0:i]
+    return sa[0:i]
 
 class contig:
     def __init__(self,fullname):
@@ -52,20 +59,38 @@ class contig:
         self.seq = None
         self.proteins = {}
         self.rnaviralness = 0
+        self.taxa = None
 
     def add_protein(self,prot_name,prot):
         self.proteins[prot_name] = prot
 
     def calculate_rnaviralness(self):
-        t, tmp_top_score = 0, 0
+#        t, tmp_top_score = 0, 0
+        t = 0
         for key, value in  self.proteins.items():
             if value.rnavaralness:
                 t += 1
-                if value.potential_taxa and tmp_top_score < value.score:
-                    self.taxa = value.potential_taxa
-                    tmp_top_score = value.score
+#                if value.potential_taxa and tmp_top_score < value.score:
+#                    self.taxa = value.potential_taxa
+#                    tmp_top_score = value.score
         if len(self.proteins):
             self.rnaviralness = t / len(self.proteins)
+            
+    def taxa_assignment(self, taxa_mode = "TOP"):
+        if taxa_mode == "TOP":
+            tmp_top_score = 0
+            for key, value in  self.proteins.items():
+                if value.rnavaralness:
+                    if value.potential_taxa and tmp_top_score < value.score:
+                        self.taxa = value.potential_taxa
+                        tmp_top_score = value.score
+        elif taxa_mode == "LCA":
+            for key, value in self.proteins.items():
+                if value.rnavaralness and value.potential_taxa:
+                    if self.taxa == None:
+                        self.taxa = value.potential_taxa
+                    else:
+                        self.taxa = longest_substring(self.taxa,value.potential_taxa)
 
 #####################################################################################
 class protein:
@@ -114,8 +139,6 @@ class protein:
             self.rnavaralness = 1
             positive_cluster.append(self.best_hit)
             self.potential_taxa = protein.db_hmmtaxa[self.best_hit]
-#            print(self.fullname.split('#')[0][1:-1], '\tcluster_%d()'%(self.best_hit), '\t', self.score, '>',
-#                  protein.db_threshold[self.best_hit], '\t', self.e_value)
             print(self.fullname.split('#')[0][1:-1],
                   '\tcluster_%d_(%.1f)' % (self.best_hit, protein.db_threshold[self.best_hit]),
                   '\t', self.score, '\t', self.e_value,
@@ -127,15 +150,13 @@ class protein:
         if hit_acc in protein.db_rv_acc:
             self.rnavaralness, self.diamond_acc = \
                 1, hit_acc
-#            print(self.fullname.split('#')[0][1:-1], '\t', hit_acc,
-#                  '\tscore:', t[-1], '\te_value:', t[-2])
             print(self.fullname.split('#')[0][1:-1], '\t', hit_acc,
                   '\t', t[-1], '\t', t[-2])
 
 #####################################################################################
 def predict(output_dir, temp_dir,
             file_input, file_output,
-            sen=False):
+            sen=False, taxa_mode = "TOP"):
     """
     :param file_input: input contigs
     :param file_output: positive contigs predicted by our strategy
@@ -216,7 +237,7 @@ def predict(output_dir, temp_dir,
 
         return contigs
 
-    def output_rnaviralness(filename, contigs):
+    def output_rnaviralness(filename, contigs, taxa_mode):
         """
         :param filename: the input file
         :param contigs: the tmp contigs dict that containing description and encoded proteins
@@ -227,6 +248,7 @@ def predict(output_dir, temp_dir,
         positive_contigs = {}
         # Sum the proteins into the contig, and recode the acc.
         for c_name,c in contigs.items():
+            c.taxa_assignment(taxa_mode)
             # viral gene content cutoff: 1/16
             if c.rnaviralness >= 0.0625:
                 if c.taxa == None:
@@ -301,7 +323,7 @@ def predict(output_dir, temp_dir,
 
     # summarize the protein result into contigs, and retrieve the identified sequences.
     # ditc {positive_contig_name: contigs_information}.
-    positive_contigs = output_rnaviralness(file_input, contigs)
+    positive_contigs = output_rnaviralness(file_input, contigs, taxa_mode)
 
     # write the output file
     write_positive_file(output_dir, file_output, positive_contigs)
@@ -310,6 +332,9 @@ def predict(output_dir, temp_dir,
 if __name__ == "__main__":
 
     args = virbot_cmd()
+    
+    if args.taxa != "TOP" and args.taxa != "LCA":
+        raise Exception("The taxonmic mode should be \"TOP\" or \"LCA\".")
 
     output_dir = args.output
     if os.path.exists(output_dir):
@@ -351,5 +376,5 @@ if __name__ == "__main__":
             temp_dir=f"{temp_dir}/",
             file_input = args.input,
             file_output = "output.vb.fasta",
-            sen=args.sen)
+            sen=args.sen, taxa_mode = args.taxa)
 
