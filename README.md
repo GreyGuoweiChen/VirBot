@@ -96,3 +96,6 @@ VirBot.py --input test/test_input.fa
 
 VirBot.py --input test/test_input.fa --output VB_result --sen
 ```
+
+### Benchmark datasets:
+Please check the link in [OneDrive](https://portland-my.sharepoint.com/:f:/g/personal/gwchen3-c_my_cityu_edu_hk/EufG0D1CYLREg_7K1UgMvpwBg6bbBIJSM0vdV5udvw1k_w?e=nOJo3G).
