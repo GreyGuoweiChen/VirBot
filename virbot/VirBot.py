@@ -5,7 +5,7 @@ from collections import Counter
 import pandas as pd
 import os
 
-VirBot_path = str(os.path.dirname(os.path.abspath(__file__)))
+VirBot_path = str(os.path.join(os.path.dirname(os.path.abspath(__file__)),"data"))
 
 global positive_cluster
 positive_cluster = []
@@ -329,7 +329,7 @@ def predict(output_dir, temp_dir,
     write_positive_file(output_dir, file_output, positive_contigs)
 
 #####################################################################################
-if __name__ == "__main__":
+def main():
 
     args = virbot_cmd()
     
@@ -378,3 +378,5 @@ if __name__ == "__main__":
             file_output = "output.vb.fasta",
             sen=args.sen, taxa_mode = args.taxa)
 
+if __name__ == "__main__":
+    main()
