@@ -1,0 +1,10 @@
+name: virbot
+channels:
+  - bioconda
+dependencies:
+  - python>=3
+  - prodigal 
+  - hmmer 
+  - diamond
+  - pandas
+  - git-lfs
