@@ -21,28 +21,61 @@ where the metagenomics dataset contains sequences from 82 eukaryotes, 365 prokar
 
 ### Quick install
 
-We highly recommend using `conda` to install all the dependencies.
-To install, please download VirBot by "git clone"
+1. We highly recommend using `conda` to install all the dependencies.
+```bash
+# create the environment and install the dependencies
+conda create -n virbot -c bioconda prodigal hmmer diamond python=3 pandas
+# activate the environment
+conda activate virbot
+```
+
+2. Please download VirBot by "git clone"
 ```
 git clone https://github.com/GreyGuoweiChen/RNA_virus_detector
 cd RNA_virus_detector
-
-# create the environment and install the dependencies
-conda env create -f environment.yml
-
-# activate the environment
-conda activate virbot
-
-# install
-pip install setup.py
 ```
 
+3. Please download the database file from [OneDrive](https://portland-my.sharepoint.com/:f:/g/personal/gwchen3-c_my_cityu_edu_hk/EufG0D1CYLREg_7K1UgMvpwBg6bbBIJSM0vdV5udvw1k_w?e=nOJo3G) and uncompress them in the same directory with VirBot.py .
+```
+unzip ref.zip
+```
+    
+The ref folder should be place under RNA_virus_detector and contain 4 database files: VirBot.hmm, VirBot.dmnd, VirBot_hmm_threshold.txt, and VirBot_RNAvirus_acc.txt, representing the pHHMs database, DIAMOND database, adaptive threshold file, and all the collected RNA virus accession number, respectively.
+
+4. You may want to add permissions to all database file.
+```
+chmod -R 777 ref
+```
+
+5. (Optional) If you want to use VirBot as an executable file, please add VirBot to your environment variables path.
+For examples (if your .bashrc file is under the user directory):
+    
+    For macOS:
+    ```
+    echo 'PATH=$PATH:YOUR_DIC/RNA_virus_detector' >> ~/.bashrc
+    ```
+    
+    For Linux:
+    ```
+    echo 'PATH="$PATH:YOUR_DIC/RNA_virus_detector"' >> ~/.bashrc
+    ```
+    Please replace YOUR_DIC by the path of RNA_virus_detector.
+    
+    Please remember to activate the PATH by:
+    ```
+    source ~/.bashrc
+    ```
+    and check its avaiability by:
+    ```
+    echo $PATH
+    ```
+    
 ## Usage:
 The VirBot is friendly to use. It requires input as fasta format and will return the fasta format output file with the identified RNA virus sequences. 
 
 ```
 # If the environment variables path is correctly set and you run VirBot.py as an executable file.
-virbot [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
+VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
 
 # If you run VirBot.py as python script.
 python VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
@@ -59,9 +92,9 @@ python VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
 ### Example:
   
 ```
-virbot --input test/test_input.fa
+VirBot.py --input test/test_input.fa
 
-virbot --input test/test_input.fa --output VB_result --sen
+VirBot.py --input test/test_input.fa --output VB_result --sen
 ```
 
 ### Benchmark datasets:
