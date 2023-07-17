@@ -8,7 +8,7 @@ from virbot import __version__
 setup(name='virbot',
       version=__version__,
       packages=find_packages(),
-      package_data={"virbot":["data/ref/*"]},
+      package_data={"virbot":["../data/ref/*"]},
       install_requires=[
             'pandas>=1.0.1'
         ],
