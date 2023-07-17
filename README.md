@@ -28,7 +28,7 @@ git clone https://github.com/GreyGuoweiChen/RNA_virus_detector
 cd RNA_virus_detector
 
 # create the environment and install the dependencies
-conda create -f environment.yml
+conda env create -f environment.yml
 
 # activate the environment
 conda activate virbot
