@@ -1,0 +1,14 @@
+YP_009518857.1 fusion glycoprotein [Human orthopneumovirus]
+YP_009505455.1 fusion glycoprotein [Bovine respiratory syncytial virus ATCC51908]
+YP_009094042.1 fusion protein [Pneumovirus dog/Bari/100-12/ITA/2012]
+YP_173332.1 fusion glycoprotein [Pneumonia virus of mice J3666]
+NP_056863.1 fusion glycoprotein [Human orthopneumovirus]
+YP_009513268.1 fusion protein [Human metapneumovirus]
+YP_009513223.1 F [Avian metapneumovirus]
+NP_044596.1 Fusion protein (F) [Respiratory syncytial virus]
+sp|Q6WB98.1|FUS_HMPVC RecName: Full=Fusion glycoprotein F0; Short=Protein F; Contains: RecName: Full=Fusion glycoprotein F2; Contains: RecName: Full=Fusion glycoprotein F1; Flags: Precursor
+sp|P22167.1|FUS_BRSVC RecName: Full=Fusion glycoprotein F0; Contains: RecName: Full=Fusion glycoprotein F2; Short=F2; Contains: RecName: Full=p27; AltName: Full=Intervening segment; AltName: Full=Pep27; AltName: Full=Peptide 27; Contains: RecName: Full=Fusion glycoprotein F1; Short=F1; Flags: Precursor
+sp|Q2Y2M3.1|FUS_AMPV1 RecName: Full=Fusion glycoprotein F0; Short=Protein F; Contains: RecName: Full=Fusion glycoprotein F2; Contains: RecName: Full=Fusion glycoprotein F1; Flags: Precursor
+sp|P29791.1|FUS_BRSVA RecName: Full=Fusion glycoprotein F0; Contains: RecName: Full=Fusion glycoprotein F2; Short=F2; Contains: RecName: Full=p27; AltName: Full=Intervening segment; AltName: Full=Pep27; AltName: Full=Peptide 27; Contains: RecName: Full=Fusion glycoprotein F1; Short=F1; Flags: Precursor
+sp|P12568.1|FUS_HRSVL RecName: Full=Fusion glycoprotein F0; Contains: RecName: Full=Fusion glycoprotein F2; Short=F2; Contains: RecName: Full=p27; AltName: Full=Intervening segment; AltName: Full=Pep27; AltName: Full=Peptide 27; Contains: RecName: Full=Fusion glycoprotein F1; Short=F1; Contains: RecName: Full=Fusion glycoprotein F2; Contains: RecName: Full=Fusion glycoprotein F1; Flags: Precursor
+sp|P23728.1|FUS_BRSVR RecName: Full=Fusion glycoprotein F0; Contains: RecName: Full=Fusion glycoprotein F2; Short=F2; Contains: RecName: Full=p27; AltName: Full=Intervening segment; AltName: Full=Pep27; AltName: Full=Peptide 27; Contains: RecName: Full=Fusion glycoprotein F1; Short=F1; Flags: Precursor

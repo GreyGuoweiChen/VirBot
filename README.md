@@ -13,10 +13,10 @@ We validated VirBot in various scenarios and benchmarked it with other 7 RNA vir
 where the metagenomics dataset contains sequences from 82 eukaryotes, 365 prokaryotes, and DNA/RNA viruses; and for the RNA virus datasets, one comprises 8,849 RNA phages that were barely detected before, while eukaryotic viruses dominate known RNA viruses; another dataset is an RNA virome sample sequenced from marine water containing 114,139 RNA viral seqeunces.| 
 
 ## Dependency:
-* Prodigal
-* HMMER3
-* DIAMOND
-* pandas
+* Prodigal 2.6.3
+* HMMER3 3.3.2
+* DIAMOND 2.0.15
+* pandas 1.5.2
 * python 3.x
 
 ### Quick install
@@ -75,10 +75,10 @@ The VirBot is friendly to use. It requires input as fasta format and will return
 
 ```
 # If the environment variables path is correctly set and you run VirBot.py as an executable file.
-VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
+VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen] [--threads]
 
 # If you run VirBot.py as python script.
-python VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
+python VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen] [--threads]
 ```
 
 ### Options 
@@ -87,6 +87,7 @@ python VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
 --input: The input contig file in fasta format.
 --output: The output directory (default: VB_result).
 --sen (Optional): Use the sensitive mode for VirBot.
+--threads (Optional): The threads number run for HMMER and DIAMOND (default: 8)
 ```
 
 ### Example:
@@ -94,7 +95,7 @@ python VirBot.py [--input INPUT_CONTIG] [--output OUTPUT_DIRECTORY] [--sen]
 ```
 VirBot.py --input test/test_input.fa
 
-VirBot.py --input test/test_input.fa --output VB_result --sen
+VirBot.py --input test/test_input.fa --output VB_result --sen --threads 8
 ```
 
 ### Benchmark datasets:

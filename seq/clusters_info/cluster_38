@@ -1,0 +1,63 @@
+YP_009449557.1 polymerase PB2 [Influenza D virus (D/swine/Oklahoma/1334/2011)]
+YP_009118631.1 polymerase PB2 [Influenza A virus (A/California/07/2009(H1N1))]
+YP_009118470.1 polymerase PB2 [Influenza A virus (A/Shanghai/02/2013(H7N9))]
+YP_308849.1 polymerase PB2 [Influenza A virus (A/New York/392/2004(H3N2))]
+YP_308855.1 polymerase PB2 [Influenza A virus (A/Korea/426/1968(H2N2))]
+YP_308664.1 polymerase [Influenza A virus (A/goose/Guangdong/1/1996(H5N1))]
+YP_089652.1 polymerase 2 [Influenza C virus (C/Ann Arbor/1/50)]
+NP_859039.1 polymerase Pb2 [Influenza A virus (A/Hong Kong/1073/99(H9N2))]
+NP_056658.1 polymerase PB2 [Influenza B virus (B/Lee/1940)]
+NP_040987.1 polymerase PB2 [Influenza A virus (A/Puerto Rico/8/1934(H1N1))]
+sp|Q20PL4.1|PB2_I79A7 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q20NZ9.1|PB2_I68A3 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q20NV1.1|PB2_I80AD RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q0A449.1|PB2_I66A1 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q0A2H7.1|PB2_I83A5 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q0A2F5.1|PB2_I83A4 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q0A2D7.1|PB2_I66A0 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P13876.1|PB2_INBAD RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P26116.1|PB2_I84A4 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P12445.1|PB2_I34A0 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P0DOG3.1|PB2S1_I33A0 RecName: Full=PB2-S1
+sp|A3DRQ0.1|PB2_I96A2 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|A4GBY7.1|PB2_I77AA RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|A8C8X3.1|PB2_I67A2 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|B3EUR6.1|PB2_I61A1 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|A4K153.1|PB2_I54A2 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|A4U6W2.1|PB2_I45A0 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|A4GCL8.1|PB2_I43A0 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|A4GCM9.1|PB2_I35A3 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|A8C8K4.1|PB2_I07A0 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q6DNM0.2|PB2_I02A3 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q6J859.2|PB2_I02A5 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q6DNK1.2|PB2_I03A1 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q67296.2|PB2_I72A2 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q0HD50.1|PB2_I40A0 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q3HM41.1|PB2_I18A0 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q2VC93.1|PB2_I80A2 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q2LG86.1|PB2_I05A1 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q0A2Q4.1|PB2_I85A3 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q0A2K8.1|PB2_I02A0 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q0A2G6.1|PB2_I59A0 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q6DNM2.1|PB2_I02A1 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q9EA38.1|PB2_I77A4 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q6J868.1|PB2_I03A0 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q8QPG7.1|PB2_I00A0 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q809Q3.1|PB2_I01A1 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|Q82573.1|PB2_I47A0 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|O91740.1|PB2_I93A0 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P31344.1|PB2_I78A3 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P26114.1|PB2_I77AC RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P26113.1|PB2_I30A0 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P03427.1|PB2_I33A0 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P26111.1|PB2_I57A5 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P26110.1|PB2_I82A3 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P18884.1|PB2_I79A4 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P26107.1|PB2_I56A3 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P26106.1|PB2_I73A4 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P26105.1|PB2_I86A2 RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P26104.1|PB2_I77AG RecName: Full=Polymerase basic protein 2; AltName: Full=RNA-directed RNA polymerase subunit P3
+sp|P0DOG5.1|PB2S1_I96A0 RecName: Full=PB2-S1
+sp|P0DOG4.1|PB2S1_I49A1 RecName: Full=PB2-S1
+sp|P0DOG6.1|PB2S1_I34A1 RecName: Full=PB2-S1
+sp|P0DOG7.1|PB2S1_I18A0 RecName: Full=PB2-S1

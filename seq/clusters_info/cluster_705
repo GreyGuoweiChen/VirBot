@@ -1,0 +1,6 @@
+YP_004222726.1 envelope protein [Avian leukemia virus]
+YP_031678.1 Gag-env fusion protein [Avian endogenous retrovirus EAV-HP]
+NP_597837.2 putative env protein gp37, partial [UR2 sarcoma virus]
+NP_040548.1 envelope protein [Avian leukosis virus - RSA]
+sp|P33498.1|ENV_AVIR3 RecName: Full=Envelope glycoprotein; AltName: Full=Env polyprotein; Contains: RecName: Full=Surface protein; Short=SU; AltName: Full=Glycoprotein 85; Short=gp85; Contains: RecName: Full=Transmembrane protein; Short=TM; AltName: Full=Glycoprotein 37; Short=gp37; Flags: Precursor
+sp|P03396.1|ENV_RSVP RecName: Full=Envelope glycoprotein gp95; AltName: Full=Env polyprotein; Contains: RecName: Full=Surface protein; Short=SU; AltName: Full=Glycoprotein 85; Short=gp85; Contains: RecName: Full=Transmembrane protein; Short=TM; AltName: Full=Glycoprotein 37; Short=gp37; Flags: Precursor

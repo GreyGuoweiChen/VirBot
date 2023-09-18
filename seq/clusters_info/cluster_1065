@@ -1,0 +1,4 @@
+NP_777385.2 gp60 SU [Bovine leukemia virus]
+sp|P25506.1|ENV_BLVB2 RecName: Full=Envelope glycoprotein; AltName: Full=Env polyprotein; Contains: RecName: Full=Surface protein; Short=SU; AltName: Full=Glycoprotein 51; Short=gp51; Contains: RecName: Full=Transmembrane protein; Short=TM; AltName: Full=Glycoprotein 30; Short=gp30; Flags: Precursor
+sp|P25505.1|ENV_BLVAV RecName: Full=Envelope glycoprotein; AltName: Full=Env polyprotein; Contains: RecName: Full=Surface protein; Short=SU; AltName: Full=Glycoprotein 51; Short=gp51; Contains: RecName: Full=Transmembrane protein; Short=TM; AltName: Full=Glycoprotein 30; Short=gp30; Flags: Precursor
+sp|P25057.1|ENV_BLVAU RecName: Full=Envelope glycoprotein; AltName: Full=Env polyprotein; Contains: RecName: Full=Surface protein; Short=SU; AltName: Full=Glycoprotein 51; Short=gp51; Contains: RecName: Full=Transmembrane protein; Short=TM; AltName: Full=Glycoprotein 30; Short=gp30; Flags: Precursor

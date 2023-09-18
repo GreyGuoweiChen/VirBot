@@ -1,0 +1,55 @@
+YP_009665181.1 polymerase, partial [Chick syncytial virus]
+YP_009665180.1 pol polyprotein, partial [Walleye epidermal hyperplasia virus 2]
+YP_009665179.1 pol polyprotein, partial [Walleye epidermal hyperplasia virus 1]
+YP_009509092.1 gag p12 protein (70 aa) [Feline sarcoma virus (STRAIN HARDY-ZUCKERMAN 4)]
+YP_009508243.1 unnamed protein product [Feline sarcoma virus (STRAIN HARDY-ZUCKERMAN 4)]
+NP_041237.1 gag-fos fusion protein [Finkel-Biskis-Jinkins murine sarcoma virus]
+YP_001165469.3 hypothetical protein WMSV_gp1, partial [Woolly monkey sarcoma virus]
+YP_009243643.1 truncated gag-pol polyprotein [Mus musculus mobilized endogenous polytropic provirus]
+NP_045937.2 Pr gag-pro-pol [Walleye dermal sarcoma virus]
+YP_009109699.1 p10 protein [Baboon endogenous virus strain M7]
+YP_009109696.1 p12 protein [Baboon endogenous virus strain M7]
+YP_009109689.1 gag-pol precursor polyprotein [Baboon endogenous virus strain M7]
+YP_004680223.1 truncated gag-pro-pol [PreXMRV-1]
+YP_001497148.1 gag-pol precursor polyprotein [RD114 retrovirus]
+YP_001165470.1 hypothetical protein WMSV_gp2, partial [Woolly monkey sarcoma virus]
+YP_443922.1 polyprotein [Atlantic salmon swim bladder sarcoma virus]
+YP_223871.1 protease/polymerase, partial [Reticuloendotheliosis virus]
+YP_223870.1 gag protein [Reticuloendotheliosis virus]
+NP_955594.1 CA [Abelson murine leukemia virus]
+NP_955586.1 p10 NC [Moloney murine leukemia virus]
+NP_955575.1 virion core structural peptide p10 [Feline leukemia virus]
+NP_598371.2 pol polyprotein fragment [Moloney murine sarcoma virus]
+NP_579907.1 gag polyprotein fragment [Spleen focus-forming virus]
+NP_047255.1 Gag-Pro-Pol precursor polyprotein gPr80 [Feline leukemia virus]
+NP_043518.1 hypothetical protein [Murine type C retrovirus]
+NP_057858.1 Pr65 [Moloney murine sarcoma virus]
+NP_041217.1 precursor protein PR-gag [Spleen focus-forming virus]
+sp|P03355.5|POL_MLVMS RecName: Full=Gag-Pol polyprotein; Short=Pr180gag-pol; Contains: RecName: Full=Matrix protein p15; Short=MA; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Short=CA; Contains: RecName: Full=Nucleocapsid protein p10-Pol; Short=NC-pol; Contains: RecName: Full=Protease; Short=PR; AltName: Full=p14; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; AltName: Full=p80; Contains: RecName: Full=Integrase; Short=IN; AltName: Full=p46
+sp|P03356.3|POL_MLVAV RecName: Full=Gag-Pol polyprotein; Contains: RecName: Full=Matrix protein p15; Short=MA; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Short=CA; Contains: RecName: Full=Nucleocapsid protein p10-Pol; Short=NC-pol; Contains: RecName: Full=Protease; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|P03359.2|POL_WMSV RecName: Full=Gag-Pol polyprotein; Contains: RecName: Full=Matrix protein p15; Short=MA; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Short=CA; Contains: RecName: Full=Nucleocapsid protein p10-Pol; Short=NC-pol; Contains: RecName: Full=Protease; Short=PR; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; AltName: Full=p80; Contains: RecName: Full=Integrase; Short=IN; AltName: Full=p46
+sp|P11227.2|POL_MLVRD RecName: Full=Gag-Pol polyprotein; Contains: RecName: Full=Matrix protein p15; Short=MA; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Short=CA; Contains: RecName: Full=Nucleocapsid protein p10-Pol; Short=NC-pol; Contains: RecName: Full=Protease; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|P26808.2|POL_MLVFP RecName: Full=Gag-Pol polyprotein; Contains: RecName: Full=Matrix protein p15; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Contains: RecName: Full=Nucleocapsid protein p10-Pol; Short=NC-pol; Contains: RecName: Full=Protease; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|P26809.2|POL_MLVFF RecName: Full=Gag-Pol polyprotein; Contains: RecName: Full=Matrix protein p15; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Contains: RecName: Full=Nucleocapsid protein p10-Pol; Short=NC-pol; Contains: RecName: Full=Protease; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|P26810.2|POL_MLVF5 RecName: Full=Gag-Pol polyprotein; Contains: RecName: Full=Matrix protein p15; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Contains: RecName: Full=Nucleocapsid protein p10-Pol; Short=NC-pol; Contains: RecName: Full=Protease; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|P08361.2|POL_MLVCB RecName: Full=Gag-Pol polyprotein; Short=Pr180gag-pol; Contains: RecName: Full=Matrix protein p15; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Contains: RecName: Full=Nucleocapsid protein p10-Pol; Short=NC-pol; Contains: RecName: Full=Protease; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|Q9TTC1.2|POL_KORV RecName: Full=Gag-Pol polyprotein; AltName: Full=Pr125Pol; Contains: RecName: Full=Matrix protein p15; Short=MA; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Short=CA; Contains: RecName: Full=Nucleocapsid protein p10-Pol; Short=NC-pol; Contains: RecName: Full=Protease/Reverse transcriptase/ribonuclease H; AltName: Full=p87; Contains: RecName: Full=Integrase; Short=IN; AltName: Full=p42
+sp|Q7SVK7.2|POL_MLVBM RecName: Full=Gag-pol polyprotein; Contains: RecName: Full=Matrix protein p15; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Contains: RecName: Full=Nucleocapsid protein p10-Pol; Short=NC-pol; Contains: RecName: Full=Protease; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|A1Z651.1|POL_XMRV6 RecName: Full=Gag-Pol polyprotein; Short=Pr180gag-pol; Contains: RecName: Full=Matrix protein p15; Short=MA; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Short=CA; Contains: RecName: Full=Nucleocapsid protein p10; Short=NC-pol; Contains: RecName: Full=Protease p14; Short=PR; Contains: RecName: Full=Reverse transcriptase/ribonuclease H p80; Short=RT; Contains: RecName: Full=Integrase p46; Short=IN
+sp|P31792.1|POL_FENV1 RecName: Full=Pol polyprotein; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|P21414.2|POL_GALV RecName: Full=Gag-Pol polyprotein; Contains: RecName: Full=Matrix protein p15; Short=MA; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Short=CA; Contains: RecName: Full=Nucleocapsid protein p10-Pol; Short=NC-pol; Contains: RecName: Full=Protease; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|P0DOH0.1|GGAG_MLVF5 RecName: Full=Glyco-Gag protein; AltName: Full=Gross cell surface antigen; AltName: Full=glycosylated Pr80 gag; Short=gPr80 Gag; Short=gag-gPr80
+sp|P0DOH2.1|GGAG_FSVMD RecName: Full=Glyco-Gag protein; AltName: Full=Gross cell surface antigen; AltName: Full=glycosylated Pr80 gag; Short=gPr80 Gag; Short=gag-gPr80
+sp|P0DOH5.1|GGAG_MLVFF RecName: Full=Glyco-Gag protein; AltName: Full=Gross cell surface antigen; AltName: Full=glycosylated Pr80 gag; Short=gPr80 Gag; Short=gag-gPr80
+sp|P0DOG9.1|GGAG_FSVST RecName: Full=Glyco-Gag protein; AltName: Full=Gross cell surface antigen; AltName: Full=glycosylated Pr80 gag; Short=gPr80 Gag; Short=gag-gPr80
+sp|P0DOH3.1|GGAG_FLV RecName: Full=Glyco-Gag protein; AltName: Full=Gross cell surface antigen; AltName: Full=glycosylated Pr80 gag; Short=gPr80 Gag; Short=gag-gPr80
+sp|P0DOH6.1|GGAG_MLVFP RecName: Full=Glyco-Gag protein; AltName: Full=Gross cell surface antigen; AltName: Full=glycosylated Pr80 gag; Short=gPr80 Gag; Short=gag-gPr80
+sp|P0DOG8.1|GGAG_MLVAV RecName: Full=Glyco-Gag protein; AltName: Full=Gross cell surface antigen; AltName: Full=glycosylated Pr80 gag; Short=gPr80 Gag; Short=gag-gPr80
+sp|P0DOH1.1|GGAG_FSVGA RecName: Full=Glyco-Gag protein; AltName: Full=Gross cell surface antigen; AltName: Full=glycosylated Pr80 gag; Short=gPr80 Gag; Short=gag-gPr80
+sp|P0DOH4.1|GGAG_MLVCB RecName: Full=Glyco-Gag protein; AltName: Full=Gross cell surface antigen; AltName: Full=glycosylated Pr80 gag; Short=gPr80 Gag; Short=gag-gPr80
+sp|Q8UN02.2|GGAG_MLVMN RecName: Full=Glyco-Gag protein; AltName: Full=Gross cell surface antigen; AltName: Full=glycosylated Pr80 gag; Short=gPr80 Gag; Short=gag-gPr80; Contains: RecName: Full=Nextended-MA-p12; Contains: RecName: Full=CA-NC
+sp|P32594.3|GAG_MSVMT RecName: Full=Gag polyprotein; AltName: Full=Core polyprotein; Contains: RecName: Full=Matrix protein p15; Short=MA; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Short=CA
+sp|P21435.3|GAG_MLVHO RecName: Full=Gag polyprotein; AltName: Full=Core polyprotein; Contains: RecName: Full=Matrix protein p15; Short=MA; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Short=CA; Contains: RecName: Full=Nucleocapsid protein p10; Short=NC-gag
+sp|P23090.3|GAG_MLVDU RecName: Full=Gag polyprotein; AltName: Full=Core polyprotein; Contains: RecName: Full=Matrix protein p15; Short=MA; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Short=CA; Contains: RecName: Full=Nucleocapsid protein p10; Short=NC-gag
+sp|P29168.3|GAG_MLVDE RecName: Full=Gag polyprotein; AltName: Full=Core polyprotein; Contains: RecName: Full=Matrix protein p15; Short=MA; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Short=CA; Contains: RecName: Full=Nucleocapsid protein p10; Short=NC-gag
+sp|P03342.1|GAG_AVISN RecName: Full=Gag polyprotein; AltName: Full=Core polyprotein; Contains: RecName: Full=Matrix protein p15; Short=MA; Contains: RecName: Full=RNA-binding phosphoprotein p12; AltName: Full=pp12; Contains: RecName: Full=Capsid protein p30; Short=CA

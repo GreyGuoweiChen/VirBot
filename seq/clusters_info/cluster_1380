@@ -1,0 +1,3 @@
+NP_056903.1 envelope polyprotein [Equine infectious anemia virus]
+sp|P22430.1|ENV_EIAV5 RecName: Full=Envelope glycoprotein; AltName: Full=Env polyprotein; Contains: RecName: Full=Surface protein; Short=SU; AltName: Full=Glycoprotein 90; Short=gp90; Contains: RecName: Full=Transmembrane protein; Short=TM; AltName: Full=Glycoprotein 45; Short=gp45; Flags: Precursor
+sp|P22428.1|ENV_EIAV2 RecName: Full=Envelope glycoprotein; AltName: Full=Env polyprotein; Contains: RecName: Full=Surface protein; Short=SU; AltName: Full=Glycoprotein 90; Short=gp90; Contains: RecName: Full=Transmembrane protein; Short=TM; AltName: Full=Glycoprotein 45; Short=gp45; Flags: Precursor

@@ -1,0 +1,44 @@
+YP_009305199.1 gag protein [Simian retrovirus 8]
+YP_009305201.1 pol protein, partial [Simian retrovirus 8]
+YP_009305200.1 protease, partial [Simian retrovirus 8]
+YP_009243641.1 putative viral DNA polymerase [Bovine retrovirus CH15]
+YP_009243640.1 putative protease [Bovine retrovirus CH15]
+YP_009243639.1 putative group-specific antigen [Bovine retrovirus CH15]
+YP_009140129.1 protease [Desmodus rotundus endogenous retrovirus]
+YP_009140128.1 gag [Desmodus rotundus endogenous retrovirus]
+YP_004222728.1 pol polyprotein, partial [Avian leukemia virus]
+YP_003864102.1 pol protein, partial [Simian retrovirus 4]
+YP_003864101.1 protease, partial [Simian retrovirus 4]
+YP_003864100.1 gag protein [Simian retrovirus 4]
+YP_241114.1 gap-pro-pol fusion, partial [Ovine enzootic nasal tumor virus]
+YP_241113.1 gap-pro fusion, partial [Ovine enzootic nasal tumor virus]
+YP_238302.1 gag [Ovine enzootic nasal tumor virus]
+NP_954565.2 RT-IN [Mason-Pfizer monkey virus]
+NP_955566.1 pp21 XX [Mouse mammary tumor virus]
+NP_955565.1 p10 MA [Mouse mammary tumor virus]
+NP_954561.1 p12 PR [Mason-Pfizer monkey virus]
+NP_862833.2 gag-pro-pol fusion, partial [Enzootic nasal tumour virus of goats]
+NP_862832.2 gag-pro fusion, partial [Enzootic nasal tumour virus of goats]
+NP_862831.2 gag protein [Enzootic nasal tumour virus of goats]
+NP_056893.1 Pr78 [Mason-Pfizer monkey virus]
+NP_041259.1 gag protein [Squirrel monkey retrovirus]
+NP_056880.1 Pr160 [Mouse mammary tumor virus]
+NP_041184.1 gag protein [Jaagsiekte sheep retrovirus]
+NP_056886.1 Pr180 polyprotein precursor [Rous sarcoma virus]
+sp|P03364.3|POL_SMRVH RecName: Full=Gag-Pro-Pol polyprotein; Contains: RecName: Full=Matrix protein p19; Contains: RecName: Full=Core protein p16; Contains: RecName: Full=Capsid protein p35; AltName: Full=Capsid protein p34; Contains: RecName: Full=Probable nucleocapsid protein-dUTPase; Short=NC-dUTPase; Contains: RecName: Full=Protease 17 kDa; Contains: RecName: Full=Protease 13 kDa; Contains: RecName: Full=G-patch peptide; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|P51517.2|POL_SRV2 RecName: Full=Gag-Pro-Pol polyprotein; Contains: RecName: Full=Matrix protein p10; Contains: RecName: Full=Phosphorylated protein pp24; Contains: RecName: Full=Phosphorylated protein pp18; Contains: RecName: Full=p12; Contains: RecName: Full=Capsid protein p27; Contains: RecName: Full=Nucleocapsid protein-dUTPase; Short=NC-dUTPase; Contains: RecName: Full=Protease 17 kDa; Contains: RecName: Full=Protease 13 kDa; Contains: RecName: Full=G-patch peptide; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|P04025.2|POL_SRV1 RecName: Full=Gag-Pro-Pol polyprotein; Contains: RecName: Full=Matrix protein p10; Contains: RecName: Full=Phosphorylated protein pp24; Contains: RecName: Full=Phosphorylated protein pp18; Contains: RecName: Full=p12; Contains: RecName: Full=Capsid protein p27; Contains: RecName: Full=Nucleocapsid protein-dUTPase; Short=NC-dUTPase; Contains: RecName: Full=Protease 17 kDa; Contains: RecName: Full=Protease 13 kDa; Contains: RecName: Full=G-patch peptide; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|P31623.2|POL_JSRV RecName: Full=Gag-Pro-Pol polyprotein; Contains: RecName: Full=Matrix protein p10; Contains: RecName: Full=Phosphorylated protein; Contains: RecName: Full=p12; Contains: RecName: Full=Capsid protein p27; Contains: RecName: Full=Nucleocapsid protein-dUTPase; Short=NC-dUTPase; Contains: RecName: Full=Protease 17 kDa; Contains: RecName: Full=Protease 13 kDa; Contains: RecName: Full=G-patch peptide; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|P11283.2|POL_MMTVC RecName: Full=Gag-Pro-Pol polyprotein; Contains: RecName: Full=Matrix protein p10; Contains: RecName: Full=Phosphorylated protein pp21; Contains: RecName: Full=Protein p3; Contains: RecName: Full=Protein p8; Contains: RecName: Full=Protein n; Contains: RecName: Full=Capsid protein p27; Contains: RecName: Full=Nucleocapsid protein-dUTPase; Short=NC-dUTPase; Contains: RecName: Full=Protease; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|O92956.2|POL_RSVSB RecName: Full=Gag-Pol polyprotein; Contains: RecName: Full=Matrix protein p19; Contains: RecName: Full=p2A; Contains: RecName: Full=p2B; Contains: RecName: Full=p10; Contains: RecName: Full=Capsid protein p27, alternate cleaved 1; Contains: RecName: Full=Capsid protein p27, alternate cleaved 2; Contains: RecName: Full=p3; Contains: RecName: Full=Nucleocapsid protein p12; Contains: RecName: Full=Protease p15; Contains: RecName: Full=Reverse transcriptase beta-subunit; Short=RT-beta; Contains: RecName: Full=Reverse transcriptase alpha-subunit; Short=RT-alpha; Contains: RecName: Full=Integrase; Short=IN; AltName: Full=pp32; Contains: RecName: Full=p4
+sp|Q04095.2|POL_RSVSA RecName: Full=Gag-Pol polyprotein; Contains: RecName: Full=Matrix protein p19; Contains: RecName: Full=p2A; Contains: RecName: Full=p2B; Contains: RecName: Full=p10; Contains: RecName: Full=p3; Contains: RecName: Full=Capsid protein p27, alternate cleaved 1; Contains: RecName: Full=Capsid protein p27, alternate cleaved 2; Contains: RecName: Full=Nucleocapsid protein p12; Contains: RecName: Full=Protease p15; Contains: RecName: Full=Reverse transcriptase beta-subunit; Short=RT-beta; Contains: RecName: Full=Reverse transcriptase alpha-subunit; Short=RT-alpha; Contains: RecName: Full=Integrase; Short=IN; AltName: Full=pp32; Contains: RecName: Full=p4
+sp|P11365.2|GAG_IPMA RecName: Full=Intracisternal A-particle Gag-related polyprotein; Contains: RecName: Full=Phosphorylated protein; Contains: RecName: Full=Capsid protein; Contains: RecName: Full=Nucleocapsid protein; Contains: RecName: Full=Protease; Flags: Precursor
+sp|P51516.3|GAG_SRV2 RecName: Full=Gag polyprotein; AltName: Full=Core polyprotein; Contains: RecName: Full=Matrix protein p10; Contains: RecName: Full=Phosphorylated protein pp24; Contains: RecName: Full=Phosphorylated protein pp18; Contains: RecName: Full=p12; Contains: RecName: Full=Capsid protein p27; Contains: RecName: Full=Nucleocapsid protein p14; Contains: RecName: Full=p4
+sp|P12894.1|POL_IPMAI RecName: Full=Intracisternal A-particle Pol-related polyprotein; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|P11368.1|POL_IPMA RecName: Full=Intracisternal A-particle Pol-related polyprotein; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|P04022.3|GAG_SRV1 RecName: Full=Gag polyprotein; AltName: Full=Core polyprotein; Contains: RecName: Full=Matrix protein p10; Contains: RecName: Full=Phosphorylated protein pp24; Contains: RecName: Full=Phosphorylated protein pp18; Contains: RecName: Full=p12; Contains: RecName: Full=Capsid protein p27; Contains: RecName: Full=Nucleocapsid protein p14; Contains: RecName: Full=p4
+sp|P03343.3|GAG_MMTVG RecName: Full=Gag polyprotein; Contains: RecName: Full=Matrix protein p10; Contains: RecName: Full=Phosphorylated protein pp21; Contains: RecName: Full=Protein p3; Contains: RecName: Full=Protein p8; Contains: RecName: Full=Protein n; Contains: RecName: Full=Capsid protein p27
+sp|P31790.1|GAG_IPMAE RecName: Full=Intracisternal A-particle Gag-related polyprotein
+sp|P04026.1|POL_IPHA RecName: Full=Intracisternal A-particle Pol-related polyprotein; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN
+sp|P04023.1|GAG_IPHA RecName: Full=Intracisternal A-particle Gag-related polyprotein; Contains: RecName: Full=Matrix protein; Contains: RecName: Full=Phosphorylated protein; Contains: RecName: Full=Capsid protein; Contains: RecName: Full=Nucleocapsid protein; Contains: RecName: Full=Protease
+sp|Q7SQ98.1|POL_ALV RecName: Full=Pol polyprotein; Contains: RecName: Full=Reverse transcriptase/ribonuclease H; Short=RT; Contains: RecName: Full=Integrase; Short=IN; AltName: Full=pp32

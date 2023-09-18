@@ -1,0 +1,52 @@
+YP_009362033.1 glycoprotein [Fugong virus]
+YP_010088059.1 glycoprotein precursor, partial [Tatenale orthohantavirus]
+YP_010088056.1 glycoprotein [Robina orthohantavirus]
+YP_010086166.1 glycoprotein precursor, partial [Brno virus]
+YP_009666010.1 glycoprotein [Necocli virus]
+YP_009665161.1 glycoprotein [Oxbow virus]
+YP_009664870.1 glycoprotein [Longquan virus]
+YP_009664721.1 glycoprotein precursor [Asikkala orthohantavirus]
+YP_009507250.1 glycoprotein [Laibin virus]
+YP_009505460.1 envelope glycoprotein [Asama virus]
+YP_009505597.1 glycoprotein precursor [Bayou orthohantavirus]
+YP_009362291.1 glycoprotein [Kenkeme virus]
+YP_009362285.1 glycoprotein [Imjin virus]
+YP_009362100.1 glycoprotein precursor [Cano Delgadito orthohantavirus]
+YP_009362096.1 glycoprotein [Khabarovsk orthohantavirus]
+YP_009362094.1 glycoprotein precursor [Sangassou orthohantavirus]
+YP_009508267.1 G1 and G2 proteins [Prospect Hill orthohantavirus]
+YP_009507845.1 glycoprotein [Yakeshi virus]
+YP_009507826.1 glycoprotein [Rockport virus]
+YP_009507330.1 glycoprotein [Eothenomys miletus hantavirus LX309]
+YP_009506658.1 glycoprotein precursor [Laguna Negra orthohantavirus]
+YP_009506412.1 M polyprotein [Hantavirus Fusong-Mf-682]
+YP_009506355.1 envelope glycoprotein precursor [El Moro Canyon orthohantavirus]
+YP_009506271.1 glycoprotein [Dabieshan virus]
+YP_009506070.1 envelope glycoprotein precursor [Choclo virus]
+YP_009362281.1 envelope glycoprotein precursor [Maporal virus]
+YP_009362037.1 glycoprotein [Nova virus]
+YP_009362289.1 glycoprotein precursor [Anjozorobe virus]
+YP_009362042.1 glycoprotein [Cao Bang orthohantavirus]
+YP_009361852.1 glycoprotein [Bowe virus]
+YP_009361850.1 glycoprotein precursor [Jeju virus]
+YP_009361843.1 glycoprotein precursor [Montano orthohantavirus]
+YP_009361841.1 glycoprotein precursor [Bruges virus]
+YP_009361839.1 glycoprotein [Quezon virus]
+YP_001911125.1 envelope glycoprotein precursor [Thottopalayam virus]
+YP_138532.1 G1/G2 glycoprotein [Hantavirus Z10]
+NP_942586.1 Glycoproteins G1 and G2 precursor [Tula orthohantavirus]
+NP_942557.1 glycoprotein precusor [Seoul orthohantavirus]
+NP_942554.1 glycoprotein precursor (G1-G2) [Dobrava-Belgrade orthohantavirus]
+NP_941974.1 glycoprotein precursor [Sin Nombre orthohantavirus]
+NP_941983.1 glycoprotein polyprotein precursor [Puumala orthohantavirus]
+NP_941978.1 hypothetical protein HTNVsMgp1 [Hantaan orthohantavirus]
+NP_604472.1 G1 and G2 surface glycoprotein precursor [Andes orthohantavirus]
+sp|P41264.1|GP_PUUMB RecName: Full=Envelope glycoprotein; AltName: Full=M polyprotein; Contains: RecName: Full=Glycoprotein G2
+sp|P41266.1|GP_PUUMP RecName: Full=Envelopment polyprotein; AltName: Full=M polyprotein; Contains: RecName: Full=Glycoprotein N; Short=Gn; AltName: Full=Glycoprotein G1; Contains: RecName: Full=Glycoprotein C; Short=Gc; AltName: Full=Glycoprotein G2; Flags: Precursor
+sp|Q83887.1|GP_NYV RecName: Full=Envelopment polyprotein; AltName: Full=M polyprotein; Contains: RecName: Full=Glycoprotein N; Short=Gn; AltName: Full=Glycoprotein G1; Contains: RecName: Full=Glycoprotein C; Short=Gc; AltName: Full=Glycoprotein G2; Flags: Precursor
+sp|P17880.1|GP_SEOUS RecName: Full=Envelopment polyprotein; AltName: Full=M polyprotein; Contains: RecName: Full=Glycoprotein N; Short=Gn; AltName: Full=Glycoprotein G1; Contains: RecName: Full=Glycoprotein C; Short=Gc; AltName: Full=Glycoprotein G2; Flags: Precursor
+sp|P28729.1|GP_SEOUR RecName: Full=Envelopment polyprotein; AltName: Full=M polyprotein; Contains: RecName: Full=Glycoprotein N; Short=Gn; AltName: Full=Glycoprotein G1; Contains: RecName: Full=Glycoprotein C; Short=Gc; AltName: Full=Glycoprotein G2; Flags: Precursor
+sp|P16853.1|GP_HANTL RecName: Full=Envelopment polyprotein; AltName: Full=M polyprotein; Contains: RecName: Full=Glycoprotein N; Short=Gn; AltName: Full=Glycoprotein G1; Contains: RecName: Full=Glycoprotein C; Short=Gc; AltName: Full=Glycoprotein G2; Flags: Precursor
+sp|P16493.1|GP_HANTH RecName: Full=Envelopment polyprotein; AltName: Full=M polyprotein; Contains: RecName: Full=Glycoprotein N; Short=Gn; AltName: Full=Glycoprotein G1; Contains: RecName: Full=Glycoprotein C; Short=Gc; AltName: Full=Glycoprotein G2; Flags: Precursor
+sp|Q09120.1|GP_PUUMU RecName: Full=Envelope glycoprotein; AltName: Full=M polyprotein; Contains: RecName: Full=Glycoprotein G2
+sp|P28728.1|GP_HANTB RecName: Full=Envelopment polyprotein; AltName: Full=M polyprotein; Contains: RecName: Full=Glycoprotein N; Short=Gn; AltName: Full=Glycoprotein G1; Contains: RecName: Full=Glycoprotein C; Short=Gc; AltName: Full=Glycoprotein G2; Flags: Precursor

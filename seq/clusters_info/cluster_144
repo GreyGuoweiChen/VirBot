@@ -1,0 +1,33 @@
+YP_010087186.1 envelope glycoprotein [Mengla dianlovirus]
+YP_003815437.1 second secreted glycoprotein [Bundibugyo ebolavirus]
+YP_003815435.1 spike glycoprotein [Bundibugyo ebolavirus]
+YP_003815436.1 small secreted glycoprotein [Bundibugyo ebolavirus]
+YP_009513279.1 second secreted glycoprotein [Bombali ebolavirus]
+YP_009513278.1 small secreted glycoprotein [Bombali ebolavirus]
+YP_009513277.1 spike glycoprotein [Bombali ebolavirus]
+YP_009055225.1 glycoprotein [Marburg marburgvirus]
+YP_004928139.1 GP2 [Lloviu cuevavirus]
+YP_004928138.1 GP1 [Lloviu cuevavirus]
+YP_003815428.1 second secreted glycoprotein [Tai Forest ebolavirus]
+YP_003815427.1 small secreted glycoprotein [Tai Forest ebolavirus]
+YP_003815426.1 spike glycoprotein [Tai Forest ebolavirus]
+YP_001531156.1 glycoprotein [Marburg marburgvirus]
+YP_138523.1 spike glycoprotein [Sudan ebolavirus]
+YP_138524.1 small secreted glycoprotein [Sudan ebolavirus]
+NP_690583.1 spike glycoprotein [Reston ebolavirus]
+NP_690584.1 small secreted glycoprotein [Reston ebolavirus]
+NP_066246.1 spike glycoprotein [Zaire ebolavirus]
+NP_066247.1 small secreted glycoprotein [Zaire ebolavirus]
+sp|P0C772.1|VSSGP_EBOSU RecName: Full=Super small secreted glycoprotein; Short=SsGP; Flags: Precursor
+sp|P0C771.1|VSSGP_EBORR RecName: Full=Super small secreted glycoprotein; Short=SsGP; Flags: Precursor
+sp|Q91DD8.1|VGP_EBORE RecName: Full=Envelope glycoprotein; AltName: Full=GP1,2; Short=GP; Contains: RecName: Full=GP1; Contains: RecName: Full=GP2; Contains: RecName: Full=Shed GP; AltName: Full=GP1,2-delta; Flags: Precursor
+sp|Q91DD7.1|VSGP_EBORE RecName: Full=Pre-small/secreted glycoprotein; Short=pre-sGP; Contains: RecName: Full=Small/secreted glycoprotein; Short=sGP; Contains: RecName: Full=Delta-peptide; Flags: Precursor
+sp|Q89853.1|VGP_EBORS RecName: Full=Envelope glycoprotein; AltName: Full=GP1,2; Short=GP; Contains: RecName: Full=GP1; Contains: RecName: Full=GP2; Contains: RecName: Full=Shed GP; AltName: Full=GP1,2-delta; Flags: Precursor
+sp|Q66814.1|VGP_EBOSB RecName: Full=Envelope glycoprotein; AltName: Full=GP1,2; Short=GP; Contains: RecName: Full=GP1; Contains: RecName: Full=GP2; Contains: RecName: Full=Shed GP; AltName: Full=GP1,2-delta; Flags: Precursor
+sp|P87666.1|VGP_EBOZ5 RecName: Full=Envelope glycoprotein; AltName: Full=GP1,2; Short=GP; Contains: RecName: Full=GP1; Contains: RecName: Full=GP2; Contains: RecName: Full=Shed GP; AltName: Full=GP1,2-delta; Flags: Precursor
+sp|O11457.1|VGP_EBOG4 RecName: Full=Envelope glycoprotein; AltName: Full=GP1,2; Short=GP; Contains: RecName: Full=GP1; Contains: RecName: Full=GP2; Contains: RecName: Full=Shed GP; AltName: Full=GP1,2-delta; Flags: Precursor
+sp|P35254.1|VGP_MABVP RecName: Full=Envelope glycoprotein; AltName: Full=GP1,2; Short=GP; AltName: Full=Virion spike glycoprotein; Contains: RecName: Full=GP1; Contains: RecName: Full=GP2; Flags: Precursor
+sp|P60173.1|VSGP_EBOSM RecName: Full=Pre-small/secreted glycoprotein; Short=pre-sGP; Contains: RecName: Full=Small/secreted glycoprotein; Short=sGP; Contains: RecName: Full=Delta-peptide; Flags: Precursor
+sp|Q9YMG2.2|VSSGP_EBOZM RecName: Full=Super small secreted glycoprotein; Short=SsGP; Flags: Precursor
+sp|Q1PD50.1|VGP_MABVA RecName: Full=Envelope glycoprotein; AltName: Full=GP1,2; Short=GP; AltName: Full=Virion spike glycoprotein; Contains: RecName: Full=GP1; Contains: RecName: Full=GP2; Flags: Precursor
+sp|Q6UY66.1|VGP_MABVO RecName: Full=Envelope glycoprotein; AltName: Full=GP1,2; Short=GP; AltName: Full=Virion spike glycoprotein; Contains: RecName: Full=GP1; Contains: RecName: Full=GP2; Flags: Precursor

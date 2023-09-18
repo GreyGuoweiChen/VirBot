@@ -1,0 +1,67 @@
+YP_009173866.1 polymerase [Hepatitis B virus]
+YP_009553236.1 polymerase [Domestic cat hepadnavirus]
+YP_009666523.1 polymerase [Capuchin monkey hepatitis B virus]
+YP_009259541.1 polymerase [Bluegill hepatitis B virus]
+YP_009506646.1 polymerase [Pomona bat hepatitis B virus]
+YP_009175034.1 polymerase [Woolly monkey hepatitis B virus]
+YP_009045999.1 polymerase [Tent-making bat hepatitis B virus]
+YP_009045995.1 polymerase [Horseshoe bat hepatitis B virus]
+YP_009045991.1 polymerase [Roundleaf bat hepatitis B virus]
+YP_007677999.1 polymerase [Long-fingered bat hepatitis B virus]
+NP_671813.1 DNA polymerase [Woodchuck hepatitis virus]
+NP_040994.1 hypothetical protein [Ground squirrel hepatitis virus]
+sp|P0C688.1|DPOL_HBVC1 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P17396.1|DPOL_WHV5 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P06275.1|DPOL_WHV2 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P12899.1|DPOL_WHV3 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P03160.1|DPOL_WHV1 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P03158.2|DPOL_HBVA2 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P12933.2|DPOL_HBVC3 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q9QMI1.1|DPOL_HBVD4 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q9QBF1.1|DPOL_HBVB7 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q9QAB8.1|DPOL_HBVB3 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q91C36.1|DPOL_HBVA6 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|O91533.1|DPOL_HBVA7 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P31870.1|DPOL_HBVC4 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P03157.1|DPOL_HBVC5 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P17393.1|DPOL_HBVB2 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P17100.1|DPOL_HBVA4 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q9YPV8.1|DPOL_HBVGO RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P87744.1|DPOL_HBVGB RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q9J5S2.1|DPOL_HBVOR RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q64898.1|DPOL_ASHV RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|O71304.1|DPOL_WMHBV RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P12900.1|DPOL_HBVCP RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q69028.2|DPOL_HBVCJ RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P0C690.1|DPOL_HBVC9 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P0C679.1|DPOL_HBVD5 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P0C676.1|DPOL_HBVB8 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q02314.2|DPOL_HBVA5 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q4R1S7.1|DPOL_HBVA8 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q4R1R9.1|DPOL_HBVA9 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q9QAW8.1|DPOL_HBVE3 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q9PX62.1|DPOL_HBVB5 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q69602.1|DPOL_HBVE1 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q67925.1|DPOL_HBVB6 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q80IU7.1|DPOL_HBVE2 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q80IU4.1|DPOL_HBVE4 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|O56655.1|DPOL_HBVD7 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q9YZR5.1|DPOL_HBVC2 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q9IBI4.1|DPOL_HBVG3 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q9E6S5.1|DPOL_HBVC0 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q99HS4.1|DPOL_HBVF3 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q99HR5.1|DPOL_HBVF4 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q913A7.1|DPOL_HBVC7 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q8JN08.1|DPOL_HBVH2 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q8JMZ7.1|DPOL_HBVH3 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q8JMY7.1|DPOL_HBVH1 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q8JMY4.1|DPOL_HBVF2 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q69605.1|DPOL_HBVF6 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q67878.1|DPOL_HBVD6 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q81165.1|DPOL_HBVC8 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|Q05486.1|DPOL_HBVF1 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P03155.1|DPOL_HBVD1 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P17395.1|DPOL_HBVB4 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P17394.1|DPOL_HBVB1 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P24024.1|DPOL_HBVD2 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
+sp|P03159.1|DPOL_HBVA3 RecName: Full=Protein P; Includes: RecName: Full=DNA-directed DNA polymerase; Includes: RecName: Full=RNA-directed DNA polymerase; Includes: RecName: Full=Ribonuclease H
