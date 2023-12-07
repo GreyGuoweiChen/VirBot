@@ -1,1 +1,8 @@
-ref.zip filter=lfs diff=lfs merge=lfs -text
+virbot/data/ref/VirBot.dmnd filter=lfs diff=lfs merge=lfs -text
+virbot/data/ref filter=lfs diff=lfs merge=lfs -text
+virbot/data/ref/VirBot.hmm filter=lfs diff=lfs merge=lfs -text
+virbot/data/ref/VirBot_RNAvirus_acc.txt filter=lfs diff=lfs merge=lfs -text
+virbot/data/ref/VirBot_hmm_taxa.txt filter=lfs diff=lfs merge=lfs -text
+virbot/data/ref/VirBot_hmm_taxa_full.txt filter=lfs diff=lfs merge=lfs -text
+virbot/data/ref/VirBot_hmm_threshold.txt filter=lfs diff=lfs merge=lfs -text
+virbot/data/ref.zip filter=lfs diff=lfs merge=lfs -text
