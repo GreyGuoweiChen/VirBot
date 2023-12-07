@@ -27,11 +27,17 @@ To install, please download VirBot by "git clone"
 git clone https://github.com/GreyGuoweiChen/RNA_virus_detector
 cd RNA_virus_detector
 
-# create the environment and install the dependencies
-conda env create -f environment.yml
+# create the environment and install the dependencies using conda or mamba
+mamba env create -f environment.yml
 
 # activate the environment
 conda activate virbot
+
+# if git-lfs is not installed globally, you will now need to git pull to retrieve the large reference files
+git lfs fetch
+
+# unzip reference files
+cd virbot/data; gunzip ref.zip; cd ../..
 
 # install
 pip install .
