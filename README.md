@@ -40,7 +40,7 @@ git lfs install
 git lfs fetch
 git lfs pull
 ```
-or alternatively, if is available from [OneDrive](https://portland-my.sharepoint.com/:f:/g/personal/gwchen3-c_my_cityu_edu_hk/EufG0D1CYLREg_7K1UgMvpwBg6bbBIJSM0vdV5udvw1k_w?e=nOJo3G) and can be placed into the virbot/data directory.
+or alternatively, it is available from [OneDrive](https://portland-my.sharepoint.com/:f:/g/personal/gwchen3-c_my_cityu_edu_hk/EufG0D1CYLREg_7K1UgMvpwBg6bbBIJSM0vdV5udvw1k_w?e=nOJo3G) and can be placed into the virbot/data directory.
 
 Finally, unzip the reference files and install
 ```
