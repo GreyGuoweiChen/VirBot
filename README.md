@@ -35,7 +35,10 @@ conda activate virbot
 
 # if git-lfs is not installed globally, you will now need to retrieve the large reference files
 git lfs install
-git lfs pull virbot/data/ref.zip
+git lfs fetch
+git lfs pull
+
+# NB if this doesn't work, the files are also available from [OneDrive](https://portland-my.sharepoint.com/:f:/g/personal/gwchen3-c_my_cityu_edu_hk/EufG0D1CYLREg_7K1UgMvpwBg6bbBIJSM0vdV5udvw1k_w?e=nOJo3G) and pasted into the virbot/data directory.
 
 # unzip reference files
 cd virbot/data; gunzip ref.zip; cd ../..
