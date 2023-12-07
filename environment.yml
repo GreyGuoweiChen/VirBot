@@ -3,8 +3,8 @@ channels:
   - bioconda
 dependencies:
   - python>=3
-  - prodigal 
-  - hmmer 
-  - diamond
-  - pandas
+  - prodigal>=2.6.3 
+  - hmmer>=3.3.2
+  - diamond>=2.0.15
+  - pandas>=1.5.2
   - git-lfs
