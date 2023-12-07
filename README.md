@@ -37,10 +37,10 @@ conda activate virbot
 pip install .
 ```
 
-If you are unable to install GIT-LFS, you can instead manually download the references file from [OneDrive](https://portland-my.sharepoint.com/:f:/g/personal/gwchen3-c_my_cityu_edu_hk/EufG0D1CYLREg_7K1UgMvpwBg6bbBIJSM0vdV5udvw1k_w?e=nOJo3G) and place it directly into the `virbot/data` directory.
+If you are unable to install GIT-LFS, you can instead manually download the references file from [OneDrive](https://portland-my.sharepoint.com/:f:/g/personal/gwchen3-c_my_cityu_edu_hk/EufG0D1CYLREg_7K1UgMvpwBg6bbBIJSM0vdV5udvw1k_w?e=nOJo3G) and place it directly into the `virbot/data` directory before running the pip install step.
 
 ## Usage:
-The VirBot is friendly to use. It requires input as fasta format and will return the fasta format output file with the identified RNA virus sequences. 
+The VirBot is friendly to use. It requires input as fasta format and will return the fasta format output file with the identified RNA virus sequences. If you have not installed using the pip install command above you will need to add `virbot/VirBot.py` to your path or call the script directly.
 
 ```
 # If the environment variables path is correctly set and you run VirBot.py as an executable file.
