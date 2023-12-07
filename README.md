@@ -33,8 +33,9 @@ mamba env create -f environment.yml
 # activate the environment
 conda activate virbot
 
-# if git-lfs is not installed globally, you will now need to git pull to retrieve the large reference files
-git lfs fetch
+# if git-lfs is not installed globally, you will now need to retrieve the large reference files
+git lfs install
+git lfs pull virbot/data/ref.zip
 
 # unzip reference files
 cd virbot/data; gunzip ref.zip; cd ../..
