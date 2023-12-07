@@ -13,7 +13,7 @@ positive_cluster = []
 # argument parser
 def virbot_cmd():
     parser = argparse.ArgumentParser(description="ARGUMENTS")
-    parser.add_argument('--input', type=str, help="The input contig file.")
+    parser.add_argument('--input', type=str, required=True, help="The input contig file.")
     parser.add_argument('--output', default="VB_result", type=str, help="The output directory.")
     parser.add_argument('--sen', action='store_true', help="Run the sensitive mode of VirBot.")
     parser.add_argument('--taxa', default="TOP", help="The mode of VirBot's taxanomic module (TOP(default)/LCA)")
