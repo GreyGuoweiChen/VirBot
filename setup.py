@@ -16,6 +16,8 @@ class install(_install):
         os.chdir(gitdir)
         g = git.cmd.Git(gitdir)
         try:
+            g.execute(['git', 'lfs', 'install'])
+            g.execute(['git', 'lfs', 'fetch'])
             g.execute(['git', 'lfs', 'pull'])
             zip_data_from = os.path.join(gitdir, "virbot", "data", "ref.zip")
             zip_data_to = os.path.join(gitdir, "virbot", "data", "ref")
