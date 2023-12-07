@@ -19,10 +19,9 @@ class install(_install):
             g.execute(['git', 'lfs', 'install'])
             g.execute(['git', 'lfs', 'fetch'])
             g.execute(['git', 'lfs', 'pull'])
-            zip_data_from = os.path.join(gitdir, "virbot", "data", "ref.zip")
-            zip_data_to = os.path.join(gitdir, "virbot", "data", "ref")
-            with zipfile.ZipFile(zip_data_from,"r") as zip_ref:
-                zip_ref.extractall(zip_data_to)
+            zip_data = os.path.join(gitdir, "virbot", "data", "ref.zip")
+            with zipfile.ZipFile(zip_data,"r") as zip_ref:
+                zip_ref.extractall()
         except git.exc.GitCommandError:
             print("Warning git-lfs is not installed - please manually download and unzip the reference files!")
         os.chdir(cwd)
