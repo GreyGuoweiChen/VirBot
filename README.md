@@ -45,7 +45,7 @@ or alternatively, it is available from [OneDrive](https://portland-my.sharepoint
 Finally, unzip the reference files and install
 ```
 # unzip reference files
-cd virbot/data; gunzip ref.zip; cd ../..
+cd virbot/data; unzip ref.zip; cd ../..
 
 # install
 pip install .
