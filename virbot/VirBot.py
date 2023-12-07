@@ -4,6 +4,7 @@ import subprocess
 from collections import Counter
 import pandas as pd
 import os
+import sys
 
 VirBot_path = str(os.path.join(os.path.dirname(os.path.abspath(__file__)),"data"))
 
@@ -17,6 +18,7 @@ def virbot_cmd():
     parser.add_argument('--output', default="VB_result", type=str, help="The output directory.")
     parser.add_argument('--sen', action='store_true', help="Run the sensitive mode of VirBot.")
     parser.add_argument('--taxa', default="TOP", help="The mode of VirBot's taxanomic module (TOP(default)/LCA)")
+    parser.add_argument('--threads', default="8", help="The threads number run for HMMER and DIAMOND")
     args = parser.parse_args()
     return args
 
@@ -344,8 +346,6 @@ def main():
     temp_dir = f"{output_dir}/tmp"
     os.makedirs(temp_dir)
 
-    FNULL = open(os.devnull, 'w')
-
     print(f"Input contig: {args.input}")
     print(f"Output directory: {output_dir}")
     if args.sen:
@@ -355,20 +355,29 @@ def main():
 
     # run Prodigal
     print("Predicting the encoded proteins...")
-    subprocess.run(f"prodigal -i {args.input} -a {temp_dir}/protein.faa -p meta", shell=True, stdout=FNULL, stderr=subprocess.STDOUT)
+    result = subprocess.run(f"prodigal -i {args.input} -a {temp_dir}/protein.faa -p meta", shell=True, capture_output=True, text=True)
+    if result.returncode != 0:
+        print(f"Prodigal terminated with error code {result.returncode}:\n\n{result.stderr}")
+        sys.exit(result.returncode)
     print("Proteins prediction finished.")
 
     # run HMMER
     print("Scanning the protein by hmmsearch...")
-    subprocess.run(f"hmmsearch --tblout {temp_dir}/VB_hmmer.out --noali -E 0.001 --cpu 112 {VirBot_path}/ref/VirBot.hmm {temp_dir}/protein.faa", shell=True, stdout=FNULL)
+    result = subprocess.run(f"hmmsearch --tblout {temp_dir}/VB_hmmer.out --noali -E 0.001 --cpu {args.threads} {VirBot_path}/ref/VirBot.hmm {temp_dir}/protein.faa", shell=True, capture_output=True, text=True)
+    if result.returncode != 0:
+        print(f"HMMER terminated with error code {result.returncode}:\n\n{result.stderr}")
+        sys.exit(result.returncode)
     print("HMMER finshed.")
 
     # run DIAMOND (in sensitive mode)
     if args.sen:
         print("Scanning the protein by DIAMOND...")
-        subprocess.run(f"diamond blastp --db {VirBot_path}/ref/VirBot.dmnd --query {temp_dir}/protein.faa "
-                       f"--outfmt 6 --max-target-seqs 1 --threads 112 "
-                       f"--evalue 1e-5 --out {temp_dir}/VB_diamond.out", shell=True, stdout=FNULL, stderr=subprocess.STDOUT)
+        result = subprocess.run(f"diamond blastp --db {VirBot_path}/ref/VirBot.dmnd --query {temp_dir}/protein.faa "
+                       f"--outfmt 6 --max-target-seqs 1 --threads {args.threads} "
+                       f"--evalue 1e-5 --out {temp_dir}/VB_diamond.out", shell=True, capture_output=True, text=True)
+        if result.returncode != 0:
+            print(f"Prodigal terminated with error code {result.returncode}:\n\n{result.stderr}")
+            sys.exit(result.returncode)
         print("DIAMOND finshed.")
 
     # predict using VirBot
