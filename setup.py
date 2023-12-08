@@ -3,7 +3,6 @@ import glob
 import os
 import pkg_resources
 from setuptools.command.install import install as _install
-import git
 import zipfile
 
 from virbot import __version__
