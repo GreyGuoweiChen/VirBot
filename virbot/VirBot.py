@@ -27,7 +27,7 @@ def read_thresholding():
     if not os.path.exists(filename):
         print(os.listdir(VirBot_path))
         print(os.listdir(os.path.join(VirBot_path, ref)))
-        sys.exit("References not found)
+        sys.exit("References not found")
     threshold = {}
     with open(filename, 'r') as f:
         for line in f:
