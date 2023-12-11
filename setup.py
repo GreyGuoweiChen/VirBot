@@ -13,7 +13,7 @@ class install(_install):
         gitdir = os.path.dirname(os.path.realpath(__file__))
         data_dir = os.path.join(gitdir, "virbot", "data", "ref")
         if not os.path.exists(data_dir):
-            os.mkdirs(data_dir)
+            os.makedirs(data_dir)
         if os.listdir(data_dir):
             return
 
