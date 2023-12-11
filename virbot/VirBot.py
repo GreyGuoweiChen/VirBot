@@ -5,8 +5,9 @@ from collections import Counter
 import pandas as pd
 import os
 import sys
+import importlib.resources
 
-VirBot_path = str(os.path.join(os.path.dirname(os.path.abspath(__file__)),"data"))
+virbot_data = importlib.resources.files('virbot.data.ref')
 
 global positive_cluster
 positive_cluster = []
@@ -23,11 +24,7 @@ def virbot_cmd():
     return args
 
 def read_thresholding():
-    filename = VirBot_path + "/ref/VirBot_hmm_threshold.txt"
-    if not os.path.exists(filename):
-        print(os.listdir(VirBot_path))
-        print(os.listdir(os.path.join(VirBot_path, ref)))
-        sys.exit("References not found")
+    filename = virbot_data.joinpath("VirBot_hmm_threshold.txt")
     threshold = {}
     with open(filename, 'r') as f:
         for line in f:
@@ -36,7 +33,7 @@ def read_thresholding():
     return threshold
     
 def read_hmmtaxa():
-    filename = VirBot_path + "/ref/VirBot_hmm_taxa_full.txt"
+    filename = virbot_data.joinpath("VirBot_hmm_taxa_full.txt")
     hmm_taxa = {}
     with open(filename, 'r') as f:
         for line in f:
@@ -45,7 +42,7 @@ def read_hmmtaxa():
     return hmm_taxa
 
 def read_rv_acc():
-    filename = VirBot_path + "/ref/VirBot_RNAvirus_acc.txt"
+    filename = virbot_data.joinpath("VirBot_RNAvirus_acc.txt")
     db_rc_acc = set()
     with open(filename, 'r') as f:
         for line in f:
@@ -367,7 +364,7 @@ def main():
 
     # run HMMER
     print("Scanning the protein by hmmsearch...")
-    result = subprocess.run(f"hmmsearch --tblout {temp_dir}/VB_hmmer.out --noali -E 0.001 --cpu {args.threads} {VirBot_path}/ref/VirBot.hmm {temp_dir}/protein.faa", shell=True, capture_output=True, text=True)
+    result = subprocess.run(f"hmmsearch --tblout {temp_dir}/VB_hmmer.out --noali -E 0.001 --cpu {args.threads} {virbot_data.joinpath("VirBot.hmm")} {temp_dir}/protein.faa", shell=True, capture_output=True, text=True)
     if result.returncode != 0:
         print(f"HMMER terminated with error code {result.returncode}:\n\n{result.stderr}")
         sys.exit(result.returncode)
@@ -376,7 +373,7 @@ def main():
     # run DIAMOND (in sensitive mode)
     if args.sen:
         print("Scanning the protein by DIAMOND...")
-        result = subprocess.run(f"diamond blastp --db {VirBot_path}/ref/VirBot.dmnd --query {temp_dir}/protein.faa "
+        result = subprocess.run(f"diamond blastp --db {virbot_data.joinpath("VirBot.dmnd")} --query {temp_dir}/protein.faa "
                        f"--outfmt 6 --max-target-seqs 1 --threads {args.threads} "
                        f"--evalue 1e-5 --out {temp_dir}/VB_diamond.out", shell=True, capture_output=True, text=True)
         if result.returncode != 0:

@@ -1,4 +1,4 @@
 _program = "virbot"
-__version__ = "1.0.6"
+__version__ = "1.0.7"
 
 from virbot import *

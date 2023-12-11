@@ -40,7 +40,7 @@ class install(_install):
 setup(name='virbot',
       version=__version__,
       packages=find_packages(),
-      package_data={"virbot":["data/ref/*"]},
+      package_data={"virbot.data.ref":["data/ref/*"]},
       install_requires=[],
       setup_requires=[],
       description='VirBot: RNA viral contig detector for metagenomic data',
