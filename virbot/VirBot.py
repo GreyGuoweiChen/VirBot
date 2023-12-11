@@ -24,6 +24,10 @@ def virbot_cmd():
 
 def read_thresholding():
     filename = VirBot_path + "/ref/VirBot_hmm_threshold.txt"
+    if not os.path.exists(filename):
+        print(os.listdir(VirBot_path))
+        print(os.listdir(os.path.join(VirBot_path, ref)))
+        sys.exit("References not found)
     threshold = {}
     with open(filename, 'r') as f:
         for line in f:
