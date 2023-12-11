@@ -17,15 +17,15 @@ class install(_install):
 
         zip_data = os.path.join(gitdir, "virbot", "data", "ref.zip")
         if not os.path.exists(zip_data):
-            #import git
-            #os.chdir(gitdir)
-            #g = git.cmd.Git(gitdir)
-            #try:
-            #    g.execute(['git', 'lfs', 'install'])
-            #    g.execute(['git', 'lfs', 'fetch'])
-            #    g.execute(['git', 'lfs', 'pull'])
-            #except git.exc.GitCommandError:
-            #    print("Warning git-lfs is not installed - please manually download and unzip the reference files!")
+            import git
+            os.chdir(gitdir)
+            g = git.cmd.Git(gitdir)
+            try:
+                g.execute(['git', 'lfs', 'install'])
+                g.execute(['git', 'lfs', 'fetch'])
+                g.execute(['git', 'lfs', 'pull'])
+            except git.exc.GitCommandError:
+                print("Warning git-lfs is not installed - please manually download and unzip the reference files!")
             os.chdir(cwd)
 
         with zipfile.ZipFile(zip_data,"r") as zip_ref:
