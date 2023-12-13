@@ -25,6 +25,7 @@ def virbot_cmd():
 
 def read_thresholding():
     filename = virbot_data.joinpath("VirBot_hmm_threshold.txt")
+    print(f"{filename}")
     threshold = {}
     with open(filename, 'r') as f:
         for line in f:
@@ -34,6 +35,7 @@ def read_thresholding():
     
 def read_hmmtaxa():
     filename = virbot_data.joinpath("VirBot_hmm_taxa_full.txt")
+    print(f"{filename}")
     hmm_taxa = {}
     with open(filename, 'r') as f:
         for line in f:
@@ -43,6 +45,7 @@ def read_hmmtaxa():
 
 def read_rv_acc():
     filename = virbot_data.joinpath("VirBot_RNAvirus_acc.txt")
+    print(f"{filename}")
     db_rc_acc = set()
     with open(filename, 'r') as f:
         for line in f:
@@ -364,6 +367,7 @@ def main():
 
     # run HMMER
     print("Scanning the protein by hmmsearch...")
+    print(f"HMM INPUT FILE: {virbot_data.joinpath("VirBot.hmm")}")
     result = subprocess.run(f"hmmsearch --tblout {temp_dir}/VB_hmmer.out --noali -E 0.001 --cpu {args.threads} {virbot_data.joinpath("VirBot.hmm")} {temp_dir}/protein.faa", shell=True, capture_output=True, text=True)
     if result.returncode != 0:
         print(f"HMMER terminated with error code {result.returncode}:\n\n{result.stderr}")
@@ -373,6 +377,7 @@ def main():
     # run DIAMOND (in sensitive mode)
     if args.sen:
         print("Scanning the protein by DIAMOND...")
+        print(f"DIAMOND INPUT FILE {virbot_data.joinpath("VirBot.dmnd")}")
         result = subprocess.run(f"diamond blastp --db {virbot_data.joinpath("VirBot.dmnd")} --query {temp_dir}/protein.faa "
                        f"--outfmt 6 --max-target-seqs 1 --threads {args.threads} "
                        f"--evalue 1e-5 --out {temp_dir}/VB_diamond.out", shell=True, capture_output=True, text=True)

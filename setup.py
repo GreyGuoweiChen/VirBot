@@ -1,7 +1,6 @@
 from setuptools import setup, find_packages
 import glob
 import os
-import pkg_resources
 from setuptools.command.install import install as _install
 import zipfile
 
