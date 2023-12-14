@@ -21,7 +21,7 @@ where the metagenomics dataset contains sequences from 82 eukaryotes, 365 prokar
 
 ### Quick install
 
-We highly recommend using `conda` to install all the dependencies.
+We highly recommend using `conda` or `mamba` to install all the dependencies.
 To install, please download VirBot by "git clone"
 ```
 git clone https://github.com/GreyGuoweiChen/RNA_virus_detector
@@ -32,27 +32,15 @@ mamba env create -f environment.yml
 
 # activate the environment
 conda activate virbot
-```
-
-Next you need to get the reference file `ref.zip`. If git-lfs is installed globally, this will have been downloaded already into `virbot/data/ref.zip`. If not you will now need to retrieve them with:
-```
-git lfs install
-git lfs fetch
-git lfs pull
-```
-or alternatively, it is available from [OneDrive](https://portland-my.sharepoint.com/:f:/g/personal/gwchen3-c_my_cityu_edu_hk/EufG0D1CYLREg_7K1UgMvpwBg6bbBIJSM0vdV5udvw1k_w?e=nOJo3G) and can be placed into the virbot/data directory.
-
-Finally, unzip the reference files and install
-```
-# unzip reference files
-cd virbot/data; unzip ref.zip; cd ../..
 
 # install
 pip install .
 ```
 
+If you are unable to install GIT-LFS, you can instead manually download the references file from [OneDrive](https://portland-my.sharepoint.com/:f:/g/personal/gwchen3-c_my_cityu_edu_hk/EufG0D1CYLREg_7K1UgMvpwBg6bbBIJSM0vdV5udvw1k_w?e=nOJo3G) and place it directly into the `virbot/data` directory before running the pip install step.
+
 ## Usage:
-The VirBot is friendly to use. It requires input as fasta format and will return the fasta format output file with the identified RNA virus sequences. 
+The VirBot is friendly to use. It requires input as fasta format and will return the fasta format output file with the identified RNA virus sequences. If you have not installed using the pip install command above you will need to add `virbot/VirBot.py` to your path or call the script directly.
 
 ```
 # If the environment variables path is correctly set and you run VirBot.py as an executable file.
@@ -81,3 +69,4 @@ virbot --input test/test_input.fa --output VB_result --sen --threads 8
 
 ### Benchmark datasets:
 Please check the link in [OneDrive](https://portland-my.sharepoint.com/:f:/g/personal/gwchen3-c_my_cityu_edu_hk/EufG0D1CYLREg_7K1UgMvpwBg6bbBIJSM0vdV5udvw1k_w?e=nOJo3G).
+This file is the same as the GIT-LFS hosted file `virbot/data/ref.zip` containing the models required by virbot. In addition we provide sequence files which can be found in `virbot/data/seq.zip`

@@ -8,3 +8,4 @@ dependencies:
   - diamond>=2.0.15
   - pandas>=1.5.2
   - git-lfs
+  - gitpython

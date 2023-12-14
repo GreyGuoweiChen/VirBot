@@ -1,7 +1,0 @@
-NP_041253.1 env protein precursor [Ovine lentivirus]
-NP_040843.1 envelope polyprotein [Visna-maedi virus]
-sp|P31627.2|ENV_CAEVG RecName: Full=Envelope glycoprotein; AltName: Full=Env polyprotein; Contains: RecName: Full=Surface protein; AltName: Full=Glycoprotein 135; Short=gp135; Contains: RecName: Full=Transmembrane protein; AltName: Full=Glycoprotein 38; Short=gp38; Flags: Precursor
-sp|P31626.1|ENV_CAEVC RecName: Full=Envelope glycoprotein; AltName: Full=Env polyprotein; Contains: RecName: Full=Surface protein; AltName: Full=Glycoprotein 135; Short=gp135; Contains: RecName: Full=Transmembrane protein; AltName: Full=Glycoprotein 38; Short=gp38; Flags: Precursor
-sp|P23423.1|ENV_VILV2 RecName: Full=Envelope glycoprotein gp160; AltName: Full=Env polyprotein; Contains: RecName: Full=Surface protein; AltName: Full=Glycoprotein 135; Short=gp135; Contains: RecName: Full=Transmembrane protein; AltName: Full=Glycoprotein 46; Short=gp46; Flags: Precursor
-sp|P23422.1|ENV_VILV1 RecName: Full=Envelope glycoprotein gp160; AltName: Full=Env polyprotein; Contains: RecName: Full=Surface protein; AltName: Full=Glycoprotein 135; Short=gp135; Contains: RecName: Full=Transmembrane protein; AltName: Full=Glycoprotein 46; Short=gp46; Flags: Precursor
-sp|P03379.1|ENV_VILV RecName: Full=Envelope glycoprotein gp160; AltName: Full=Env polyprotein; Contains: RecName: Full=Surface protein; AltName: Full=Glycoprotein 135; Short=gp135; Contains: RecName: Full=Transmembrane protein; AltName: Full=Glycoprotein 46; Short=gp46; Flags: Precursor
