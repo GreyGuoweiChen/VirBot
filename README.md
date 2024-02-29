@@ -24,7 +24,7 @@ where the metagenomics dataset contains sequences from 82 eukaryotes, 365 prokar
 We highly recommend using `conda` to install all the dependencies.
 To install, please download VirBot by "git clone"
 ```
-git clone https://github.com/GreyGuoweiChen/RNA_virus_detector
+git clone https://github.com/GreyGuoweiChen/VirBot.git
 cd RNA_virus_detector
 
 # create the environment and install the dependencies using conda or mamba
