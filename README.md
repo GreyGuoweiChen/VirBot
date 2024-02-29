@@ -25,7 +25,7 @@ We highly recommend using `conda` to install all the dependencies.
 To install, please download VirBot by "git clone"
 ```
 git clone https://github.com/GreyGuoweiChen/VirBot.git
-cd RNA_virus_detector
+cd VirBot
 
 # create the environment and install the dependencies using conda or mamba
 mamba env create -f environment.yml
